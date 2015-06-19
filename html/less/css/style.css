@@ -1,0 +1,278 @@
+@charset "utf-8";
+@import url("fonts.css");
+/* CSS Document */
+
+/*=======================================
+ Main CSS Document
+
+ 1. Styles Reset
+ 2. General Styles
+ 3. Header
+ 4. Main Styles
+ 5. Footer Styles
+
+ =========================================*/
+
+/*================================================
+ 1. Styles Reset
+ ================================================*/
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+}
+/*html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+}*/
+body { font-size: 0.875em; line-height: 1.4; font-family: Arial, Tahoma, Verdana, sans-serif; width:100%; background:#fff;}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong { font-weight: bold; } 
+
+input { outline: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; max-width: 100%; }
+
+a { text-decoration: none; color:#265d63;}
+a:hover { text-decoration: underline; }
+
+p {
+	margin: 0 0 10px
+}
+img {
+	border: none;
+}
+input {
+	vertical-align: middle;
+}
+sup {
+	vertical-align: baseline;
+}
+sub {
+	vertical-align: baseline;
+}
+input, button, textarea, select, optgroup, option {
+	font-family: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+	padding: 0;
+	margin: 0;
+}
+input:focus, textarea:focus {
+	outline: none;
+}
+input::-moz-focus-inner {
+  border: 0;
+}
+h1{
+	color:#265d63;
+	font-size: 2em;
+	line-height:1.4;
+	margin:35px 0 25px 10px;
+	width: 590px;
+}
+
+h2{
+	color: #000000;
+    font-family: Verdana;
+    font-size: 1.143em;
+    font-weight: bold;
+    line-height: 1;
+    margin: 1em 0 0.7em;
+    padding: 0;
+}
+h3{
+	font-size: 1.143em;
+	font-family: Verdana;
+	line-height:1;
+	color:#000;
+	margin: 1em 0 0.7em;
+	font-weight:bold;
+}
+h4{
+	font-size: 1.2em;
+	line-height:1;
+	color:#000;
+	font-weight: bold;
+	margin:0 0 15px;
+}
+h5{
+	font-size: 1em;
+	line-height:1;
+	color:#9aced3;
+	font-style:italic;
+	margin:0 0 15px;
+}
+h6{
+	font-size: 0.6em;
+	line-height:1.4;
+}
+
+
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0
+}
+.clearfix {
+	display: inline-block;
+}
+.clearfix {
+	display: block;
+}
+* html .clearfix {
+	height: 1px;
+}
+input:-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
+}
+.video embed,
+.video object,
+.video iframe {
+	width: 100%;
+	height: auto;
+}
+
+/*================================================
+ 2. General styles
+ ================================================*/
+#wrapper {
+	width: 100%;
+	min-width: 1000px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+/*================================================
+ 3. Header styles
+ ================================================*/
+
+
+/*================================================
+ 4. Main styles
+ ================================================*/
+
+
+
+/*================================================
+ 5. Footer styles
+ ================================================*/
+
+
+
+
+/*next button*/
+.bx-next {
+	position:absolute;
+	top:40%;
+	right:-50px;
+	z-index:999;
+	width: 30px;
+	height: 30px;
+	text-indent: -999999px;
+	background: url(gray_next.png) no-repeat 0 -30px;
+}
+
+/*previous button*/
+.bx-prev {
+	position:absolute;
+	top:40%;
+	left:-50px;
+	z-index:999;
+	width: 30px;
+	height: 30px;
+	text-indent: -999999px;
+	background: url(gray_prev.png) no-repeat 0 -30px;
+}
+
+/*pager links*/
+.bx-pager a {
+	margin-right: 5px;
+	color: #fff;
+	zoom:1;
+}
+
+/*auto start button*/
+.bx-auto .start {
+	background: url(gray_auto.png) no-repeat 0 2px;
+	padding-left: 13px;
+}
+
+/*auto stop button*/
+.bx-auto .stop {
+	background: url(gray_auto.png) no-repeat 0 -14px;
+	padding-left: 13px;
+}
+
+/*
+ * End color scheme styles
+ */
+
+
+/*next/prev button hover state*/
+.bx-next:hover,
+.bx-prev:hover {
+	background-position: 0 0;
+}
+
+/*pager links hover and active states*/
+.bx-pager .pager-active,
+.bx-pager a:hover {
+	background-position: 0 0;
+}
+
+/*pager wrapper*/
+.bx-pager {
+    color: #666666;
+    font-size: 12px;
+    padding-top: 7px;
+    position: absolute;
+	right: -14px;
+    text-align: center;
+    top: -73px;
+}
+
+/*captions*/
+.bx-captions {
+	text-align:center;
+	font-size: 12px;
+	padding: 7px 0;
+	color: #666;
+}
+
+/*auto controls*/
+.bx-auto {
+	text-align: center;
+	padding-top: 15px;
+}
+
+.bx-auto a {
+	color: #666;
+	font-size: 12px;
+}

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Новости сервиса</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/nav.css">
+  <link rel="stylesheet" type="text/css" href="css/editor.css">
+  
+
+  <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+  <script type="text/javascript" src="js/jquery.selectbox.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+  <script src="http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.js"></script>
+  <script src="https://mindmup.s3.amazonaws.com/lib/jquery.hotkeys.js"></script>
+  <script type="text/javascript" src="js/bootstrap-wysiwyg.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  
+  
+  <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/ie.css">
+  <![endif]-->
+  <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="css/ie7.css">
+  <![endif]-->
+</head>
+
+<body>
+<div id="wrapper">
+
+  <div id="header">
+    <div class="bottom-line"></div>
+    <div class="row-fluid">
+      <div class="span3">
+        <div class="logo"><a href="#"><img src="img/elem/logo.png" alt=""></a></div>
+      </div>
+      <div class="span9">
+        <div class="main-navigation not-logged">
+          <ul>
+            <li class="my-note current"><a href="#">Мой блокнот</a></li>
+            <li class="filter"><a href="#">Фильтры</a></li>
+            <li class="search"><a href="#">Поиск</a></li>
+          </ul>
+        </div>        
+    
+        <div class="control-panel not-logged">
+          <ul>
+            <li class="location"><a href="#">Санкт-Петербург</a></li>
+            <li class="enter-button"><a href="#">Войти</a></li>            
+            <li class="navigation-add-button"><a href="#">Добавить</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div><!-- #header-->
+
+
+
+
+  <div id="content" class="editor">
+    <div class="row-fluid">
+      <div class="contentHeader"><h1>Добавление записи</h1> <i>Регистрация не требуется</i></div>
+    
+      <div class="row-fluid">
+        <div class="span7">
+            <h5>Название записи</h5>
+            <div class="form-row">
+              <input type="text" placeholder="Введите название записи"  class="styled-input">
+            </div>
+        </div>
+        <div class="span5">
+          <div class="subHolder">
+            <h5>Тип записи</h5>
+            <div class="form-row">
+              <select>
+                <option>Запись</option>
+                <option>Запись</option>
+                <option>Запись</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="subHolder">
+            <h5>Приватность</h5>
+            <div class="form-row">
+              <select>
+                <option>Только для меня</option>
+                <option>Только для меня</option>
+                <option>Только для меня</option>
+              </select>
+            </div>
+          </div>
+            
+        </div>
+      </div>
+    
+      <div class="editor-holder">
+        <div class="editor-buttons clearfix">
+          <div class="button-group">
+            <div class="ed-button">
+              <span class="font-size"></span>
+            </div>
+          </div>
+          <div class="button-group">
+            <div class="ed-button"><span class="bold"></span></div>
+            <div class="ed-button"><span class="italic"></span></div>
+            <div class="ed-button"><span class="underline"></span></div>
+            <div class="ed-button"><span class="crossline"></span></div>
+          </div>
+          <div class="button-group">
+            <div class="ed-button"><span class="text-align-left"></span></div>
+            <div class="ed-button"><span class="text-align-center"></span></div>
+            <div class="ed-button"><span class="text-align-right"></span></div>
+            <div class="ed-button"><span class="text-align-justify"></span></div>
+            <div class="ed-button"><span class="create-ul"></span></div>
+            <div class="ed-button"><span class="create-ol"></span></div>
+          </div>
+          <div class="button-group fl-r">
+            <div class="ed-button"><span class="say-in-mice"></span></div>
+          </div>
+          <div class="button-group fl-r">
+            <div class="ed-button"><span class="go-back"></span></div>
+            <div class="ed-button"><span class="go-forth"></span></div>
+          </div>
+          <div class="button-group fl-r">
+            <div class="ed-button"><span class="add-video"></span></div>
+            <div class="ed-button"><span class="add-audeo"></span></div>
+            <div class="ed-button"><span class="add-file"></span></div>
+            <div class="ed-button"><span class="add-img"></span></div>
+            <div class="ed-button"><span class="add-link"></span></div>
+          </div>
+        </div>
+        <div class="editor-field">
+          <textarea name="editor-field" id="editor-field" cols="30" rows="10" class="styled-input" value="Введите текст">Введите текст</textarea>
+        </div>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="dashedHolder clearfix">
+        <div class="form-row">
+          <h5>Данные автора</h5>
+          <i>Вы не залогинены в сервисе, поэтому для добавления записи от вас может потребоваться заполнить обязательные поля</i>
+        </div>
+        <div class="form-row authorData">
+          <input type="text" class="styled-input" placeholder="E-mail">
+          <input type="text" class="styled-input" placeholder="Имя">
+          <input type="text" class="styled-input" placeholder="Фамилия">
+          <span>Через соц. сети:</span>
+          <ul class="social-buttons">
+            <li><a href="#"><img src="img/icons/facebook-ico.png" alt=""></a></li>
+            <li><a href="#"><img src="img/icons/google-ico.png" alt=""></a></li>
+            <li><a href="#"><img src="img/icons/link-ico.png" alt=""></a></li>
+            <li><a href="#"><img src="img/icons/mail-co.png" alt=""></a></li>
+            <li><a href="#"><img src="img/icons/ok-ico.png" alt=""></a></li>
+            <li><a href="#"><img src="img/icons/vk-ico.png" alt=""></a></li>
+            <li><a href="#"><img src="img/icons/yandex-ico.png" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="dashedHolder">
+        <div class="form-row">
+          <h5>Место публикации</h5>
+          <i>Сервис автоматически определяет ваше местоположение, но вы можете его изменить либо уточнить поставив точку на карте</i>
+        </div>
+        <div class="placePub row-fluid">
+          <div class="span10">
+            <select>
+                <option>Укажите регион</option>
+                <option>Укажите регион</option>
+                <option>Укажите регион</option>
+              </select>
+            <input type="text" class="styled-input adress" placeholder="Адрес">
+            <input type="text" class="styled-input pointname" placeholder="Название точки">
+            <div class="buttonHolder"><a href="#" class="blueButton">Сохранить место</a></div>
+          </div>
+          <div class="span2">
+              <select>
+                <option>Выбрать из сохраненных</option>
+                <option>Выбрать из сохраненных</option>
+                <option>Выбрать из сохраненных</option>
+              </select>
+          </div>
+        </div>
+      </div>
+      <div class="row-fluid bottom-row">
+        <div class="span3"><a href="#" class="remind-link">Напомнить мне</a></div>
+        <div class="span9">
+          <div class="buttonHolder add-article not-active right"><a href="#" class="blueButton">Добавить запись</a></div> 
+          <div class="checkbox-holder ta-r onButton">
+            <span><input class="checkBox" type="checkbox" name="visibleall"></span>
+            <label>Я прочитал и согласен с <a href="#">правилами публикации записей</a> в системе БЛОКНОТ.РФ</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- #content-->
+
+</div><!-- #wrapper -->
+
+<div id="footer">
+  <div class="row-fluid">
+    <div class="span3">
+      <a href="#" class="bottom-logo"><img src="img/elem/logo.png" alt=""></a>
+      <ul class="social-buttons">
+        <li><a href="#"><img src="img/icons/facebook-ico.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/google-ico.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/link-ico.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/mail-co.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/ok-ico.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/vk-ico.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/yandex-ico.png" alt=""></a></li>
+      </ul>
+      <p class="copyright">
+        © 2013 Все права защищены
+      </p>
+    </div>
+    <div class="span3">
+      <ul class="bottom-nav">
+        <li class="main-link"><a href="#">О сервисе</a></li>
+        <li><a href="#">О Блокноте</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Условия договора</a></li>
+        <li><a href="#">Политика конфиденциальности</a></li>
+        <li><a href="#">Разработчики сервиса</a></li>
+      </ul>
+    </div>
+    <div class="span3">
+      <ul class="bottom-nav">
+        <li class="main-link"><a href="#">Блокнот пользователя</a></li>
+        <li><a href="#">Записи</a></li>
+        <li><a href="#">Сообщения</a><span class="number">+18</span></li>
+        <li><a href="#">Места</a></li>
+        <li><a href="#">Настройки</a></li>
+        <li><a href="#">Выход</a></li>
+      </ul>
+    </div>
+    <div class="span3">
+      <a href="#" class="to-top-link">Поднять</a>
+      <p>Использовано дискового пространства:<br>93 Mb из 100 Mb (93%)</p>
+    </div>
+  </div>
+</div><!-- #footer -->
+
+
+
+
+</body>
+</html>

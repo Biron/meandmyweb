@@ -1,0 +1,117 @@
+.news-panel{
+	position: relative;
+	padding-bottom: 8px;
+}
+.newsPanelBlock{
+	height: 230px;
+	overflow: hidden;
+}
+.newsPanelHeading{
+	padding-top: 18px;
+	border-bottom: 3px solid #6a6a6a;
+}
+	.newsPanelHeading h5{
+		margin-top: 0;
+		margin-bottom: 4px;
+		float: left;
+	}
+		.newsPanelHeading h5 .number{
+			color: #57bc20;
+		}
+	.newsPanelHeading .showAll{
+		display: block;
+		float: right;
+		
+	}
+.newsPanelBlock ul li{
+	padding: 11px 0 8px;
+	border-bottom: 2px solid #e5e5e5;
+	color: #7d7d7d;
+}
+.newsPanelBlock ul li.stonged,
+.newsPanelBlock ul li .date{
+	color: #272727;
+}
+	
+.bottomGradient{
+	position: absolute;
+	width: 100%;
+	height: 35px;
+	background: url("../img/elem/bottomLineBg.png") repeat-x 0 0 ;
+	left: 0;
+	bottom: 0;
+}
+
+.contentHeader{
+	width: 100%;
+	float: left;
+	border-bottom: 1px solid #e3e3e3;
+}
+	.contentHeader h1{
+	 	float: left;
+	 	margin: 0 0 5px;
+	}
+	.contentHeader i{
+		display: inline-block;
+		padding-top: 10px;
+		margin-left: 5px;
+	}	
+	.subHolder{
+		float: left;
+		width: 47%;
+		margin-left: 6%;
+		position: relative;
+		
+	}
+	.subHolder:first-child{
+		margin-left: 0;
+	}
+.subHolder .selectbox .select,
+.subHolder .selectbox{
+	width: 100%;
+}
+.subHolder .selectbox .select{
+	margin-bottom: 0;
+}
+.subHolder .selectbox + select{left: -9999px;}
+
+
+.locatio-panel{
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+.locatio-panel
+.locatio-panel .span3 .buttonHolder,
+.locatio-panel .span3 .buttonHolder .blueButton{
+	width: 100%;
+	text-align: center;
+	
+}
+/*.locatio-panel .span3 .buttonHolder .blueButton{
+	margin-top: 0;
+}
+.pointHolder .buttonHolder .blueButton{
+	margin-top: 0
+}*/
+.pointHolder .textSide{
+	padding-top: 5px;
+	margin-right: 10px; 
+}
+
+.mapHolder i,
+.mapHolder img{
+	width: 100%;
+}
+.mapHolder i{
+	display: inline-block;
+	margin-bottom: 5px;
+}
+.mapHolder img{
+	display: block;
+	margin-bottom: 10px;
+}
+.mapInput{
+	float: right;
+	width: 25%;
+	margin-right: 10px; 
+}

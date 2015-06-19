@@ -1,0 +1,50 @@
+.main-nav ul li a{
+	padding: 11px 14px 17px;
+}
+.main-nav ul li a:hover{
+	padding: 17px 15px 17px;
+}
+	.main-nav ul li a.help{
+		padding: 11px 9px 17px 10px;
+	}
+	.main-nav ul li a.help:hover{
+		padding: 17px 10px 17px 11px ;
+	}
+	.main-nav ul li a.caregiving:hover,
+	.main-nav ul li a.current.caregiving{
+		padding: 17px 15px 17px;
+	}
+input[type="submit"]{
+	line-height: 0;
+}
+.tagline{
+	float: right;
+}
+aside div{
+	margin-bottom: 10px;
+}
+*:first-child+html ul.contact-list > li{
+ width: 209px;
+}
+ul.contact-list > li a{
+	margin: 7px 0;
+	display: block;
+}
+.horizontal-banner{
+	margin-bottom: 50px;
+}
+.book-sale .inner{
+	margin-bottom: 0px;
+}
+.button-box{
+	position: relative;
+	height: 90px;
+}
+.book-button{
+	position: absolute;
+	bottom: 9px;
+	left: 50px;
+}
+.contact-us-block{
+	box-shadow: none;
+}

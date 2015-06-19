@@ -1,0 +1,77 @@
+.main-navbar ul li.live,
+.left-navbar ul li.live{ 
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='img/elem/side-nav-live.jpg',
+	sizingMethod='scale');
+	-ms-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='img/elem/side-nav-live.jpg', sizingMethod='scale');
+}
+.main-navbar ul li.golf,
+.left-navbar ul li.golf{ 
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='img/elem/side-nav-golf.jpg',
+	sizingMethod='scale');
+	-ms-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='img/elem/side-nav-golf.jpg', sizingMethod='scale');
+}
+.main-navbar ul li.dine,
+.left-navbar ul li.dine{ 
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='img/elem/side-nav-dine.jpg',
+	sizingMethod='scale');
+	-ms-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='img/elem/side-nav-dine.jpg', sizingMethod='scale');
+}
+.main-navbar ul li.stay,
+.left-navbar ul li.stay{ 
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='img/elem/side-nav-stay.jpg',
+	sizingMethod='scale');
+	-ms-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='img/elem/side-nav-stay.jpg', sizingMethod='scale');
+}
+.main-navbar ul li.events,
+.left-navbar ul li.events{ 
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='img/elem/side-nav-events.jpg',
+	sizingMethod='scale');
+	-ms-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='img/elem/side-nav-events.jpg', sizingMethod='scale');
+}
+.main-navbar ul li.play,
+.left-navbar ul li.play{ 
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='img/elem/side-nav-play.jpg',
+	sizingMethod='scale');
+	-ms-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='img/elem/side-nav-play.jpg', sizingMethod='scale');
+}
+.row-fluid .span26{
+	width: 16.66%;
+}
+.span26:first-child{
+	width: 16.6%;
+}
+.sliding-panel{
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+    zoom: 1; /* фильтры работают, если у элемента выставлен hasLayout */
+}
+.popup-holder li a,.popup-holder .weather{
+	white-space: nowrap;
+}
+/*
+.row-fluid .span8.color-content-holder {
+    width: 40%;
+}
+.row-fluid .span8{
+	width: 49.8%
+}
+.row-fluid .span10.color-content-holder{
+	width: 51.85%
+}
+.row-fluid .span6{
+	width: 37.95%;
+}
+.row-fluid .span6.color-content-holder{
+	width: 36.5%
+}*/

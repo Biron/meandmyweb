@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('div.t2').hide();
+			$('ul.tabs li').css('cursor', 'pointer');
+			$('ul.tabs li').click(function(){
+				var thisClass = this.className.slice(0,2);
+				$('div.t1').hide();
+				$('div.t2').hide();
+				$('div.' + thisClass).fadeIn();
+				$('ul.tabs li').removeClass('tab-current');
+				$(this).addClass('tab-current');
+			});
+		});
+	</script>
+</head>
+
+<body>
+
+<div id="wrapper">
+
+	<div id="header">
+    
+        <div class="left">
+            <div id="logo">
+                <a href="#" class="logo">
+                   <img src="images/logo.jpg" alt="Дедукция" />
+                </a>
+				<p class="logo_text">&mdash; Превращаем слова <br />в деньги</p>
+				<p class="header_text">Мысли должны приносить доход – 
+				именно из этого принципа мы исходили при разработке 
+				сервиса Дедукция. Сервис позволяет зарабатывать на 
+				собственных мыслях, размещаемых в виде коротких заметок 
+				или подробных статей. Для рекламодателя же этот сервис – 
+				уникальная возможность получить реальные заказы с оплатой по факту.
+				</p>
+            </div>
+        </div>
+        
+        <div class="right">
+            <div id="login">
+                <form name="loginform" method="post" action="">
+					<img src="images/key_lock.jpg" alt="Key" align="left"/>
+					<input type="text" name="login" value="E-mail"  maxlength="20" class="form" onfocus="if (this.value == this.defaultValue){this.value = '';}if(this.value != this.defaultValue){this.select();}" onblur="if (this.value == ''){this.value = this.defaultValue;}if(this.value != this.defaultValue){this.value = this.value;}" />
+					<input type="text" name="pass" value="&bull;&bull;&bull;&bull;&bull;&bull;"  maxlength="20"  class="form" onfocus="if (this.value == this.defaultValue){this.value = '';}if(this.value != this.defaultValue){this.select();}" onblur="if (this.value == ''){this.value = this.defaultValue;}if(this.value != this.defaultValue){this.value = this.value;}" />
+					<input type="submit" name="sub" value="Войти" />
+					<p class="form_text">
+						<a href="#">Забыли пароль?</a>
+						<br />
+						<a href="#">Регистрация</a>
+					</p>
+					<input type="checkbox" name="rem" /> Запомнить меня
+				</form>
+            </div>
+        </div>
+        
+	</div><!-- header-->
+
+	<div id="content">
+    
+        <div class="left">
+				<div id="content-tabs">
+					<ul class="tabs">  
+						<li class="t1  tab-current"><a>Автору</a></li>  
+						<li class="t2"><a>Рекламодателю</a></li>  
+					</ul>
+				</div> 
+				<div id="content-slider">  
+					
+						<div class="t1"><ul>
+							<li>01.  Зарегистрируйтесь в системе</li>
+							<li>02.  Напишите заметку на тему рекламодателя</li>
+							<li>03.  Дождитесь индексации поисковой системой</li>
+							<li>04.  Получайте ежемесячный пассивный доход</li>
+					   </ul>
+					   <p>
+						<strong>Пример:</strong><br />
+						Рекламодатель продаёт кофеварки. 
+						Он готов платить за привлеченные к нему 
+						заявки от потенциальных покупателей кофеварок. 
+						Он регистрируется в системе, описывает свои товары, 
+						а система подбирает “продающие вопросы” и 
+						предлагает Вам ответить на часть из них 
+						(каждому автору - свои вопросы). 
+						Например, “какую кофеварку выбрать?” 
+						или “как сварить натуральный кофе?”. 
+						Вы пишите уникальную заметку или статью, 
+						максимально раскрывающую тему и отвечающую 
+						на вопрос, а система автоматически продвигает 
+						её в поисковых системах (в течение 2-8 недель).
+						</p>
+						
+						<p>
+						На каждой странице с заметкой или статьей есть 
+						форма обратной связи. Ваша задача не только 
+						раскрыть тему, но и побудить читателя к действию. 
+						Заполнив форму, читатель становится потенциальным 
+						клиентом. А Вы - его агентом. В зависимости 
+						от рекламодателя агенту оплачивается либо 
+						сам запрос в форму обратной связи (10-500р.), 
+						либо реальная покупка (100-50000р.), совершенная 
+						пользователями, впервые попавшими на наш 
+						сайт через Вашу страницу (система помнит 
+						Ваших читателей 30 дней и оплачивает даже 
+						отложенные по времени запросы, звонки и покупки у рекламодателя).
+						</p>
+						
+						<p>
+						По каждому рекламодателю ведётся подробная 
+						статистика и КПД для авторов. Срок жизни 
+						Ваших заметок неограничен. Таким образом, 
+						однажды выразив мысль по поводу кофеварки - 
+						Вы получаете постоянный источник пассивного дохода. 
+						</p>
+						<strong>Больше мыслей - больше доход! <a href="#" title="Регистрация">Регистрация</a></strong>
+					   </div>  
+						<div class="t2"><ul>
+							<li>01.  Зарегистрируйтесь в системе</li>
+							<li>02.  Опишите Ваши товары и услуги</li>
+							<li>03.  Пополните баланс</li>
+							<li>04.  Получайте клиентов с оплатой за результат (заказ или продажа)</li>
+					   </ul>
+					   
+						<strong>Пример:</strong>
+							<p>
+							Допустим, Вы занимаетесь грузоперевозками. 
+							Опишите политику компании, регион в котором 
+							нужно искать клиентов для Вас, укажите для агентов 
+							сколько Вы готовы платить за заказы по электронной 
+							почте и звонки, а сколько за реальные продажи. 
+							Определитесь, готовы ли Вы оплачивать некоторый 
+							процент со всех заказов привлеченного клиента, 
+							или только первый. 
+							</p>
+							<p>
+
+							Заключите с системой договор, который будет гарантировать 
+							Вам защиту от мошенничества в виде “заказов-пустышек”, 
+							а нам Вашу платежеспособность. Внесите на баланс необходимый 
+							стартовый депозит, рассчитанный системой автоматически. 
+							</p>
+							<p>
+
+							Анализируйте статистику посещаемости написанных агентами 
+							статей и заметок о грузоперевозках, с формами обратной связи, 
+							ведущих клиента прямо к Вам в почтовый ящик. Извлекайте прибыль 
+							и инвестируйте в дальнейший рост! </p>
+						<strong>Больше мыслей - больше доход! <a href="#" title="Регистрация">Регистрация</a></strong>
+					  
+					   </div>  
+					  
+				</div>
+				
+       </div>
+        
+        <div class="right">
+			<div id="on-line">
+				<div class="title"><h1>Прямой эфир <span class="down">&darr;</span></h1></div>
+				<div class="on-line-content">
+<img src="images/user_news.jpg" width="12" height="12" alt="" /><a href="#" class="tit">skitalets</a> &rarr; <a href="#" class="tit">Windows</a> &rarr; <a href="#">В Windows 8 будет встроенная поддержка ISO и VHP</a><br />
+<img src="images/user_news.jpg" width="12" height="12" alt="" /><a href="#" class="tit">Robotex</a> &rarr; <a href="#" class="tit">Алгоритмы</a> &rarr; <a href="#">Microsoft Research объявило о прорыве в распознавании речи</a><br />
+<img src="images/user_news.jpg" width="12" height="12" alt="" /><a href="#" class="tit">png</a> &rarr; <a href="#" class="tit">Веб-разработка</a> &rarr; <a href="#">Автоматические хосты для веб-разработки (FreeBSD)</a><br />
+<img src="images/user_news.jpg" width="12" height="12" alt="" /><a href="#" class="tit">kns</a> &rarr; <a href="#" class="tit">Windows</a> &rarr; <a href="#">Microsoft показал проводник Windows 8 с ленточным интерфейсом</a><br />
+<img src="images/user_news.jpg" width="12" height="12" alt="" /><a href="#" class="tit">lek</a> &rarr;<a href="#" class="tit">Google</a> &rarr; <a href="#">Эрик Шмидт считает Gooale+ не только социальной сетью, но и службой идентификации</a><br />
+<img src="images/user_news.jpg" width="12" height="12" alt="" /><a href="#" class="tit">Robotex</a> &rarr;<a href="#" class="tit">Платежные системы</a> &rarr; <a href="#">PayPal в России и Украине не будет полноценным</a><br />
+<img src="images/user_news.jpg" width="12" height="12" alt="" /><a href="#" class="tit">llxff</a> &rarr;<a href="#" class="tit">Информационная безопасность</a> &rarr; <a href="#">Дыры на zakupki.oov.ru</a><br />
+<img src="images/user_news.jpg" width="12" height="12" alt="" /><a href="#" class="tit">denis15</a> &rarr; <a href="#" class="tit">Мой бизнес</a> &rarr; <a href="#">Идеальная CRM. Часть 2</a><br />
+<img src="images/user_news.jpg" width="12" height="12" alt="" /><a href="#" class="tit">Atreides07</a> &rarr;<a href="#" class="tit"> Dura lex</a> &rarr; <a href="#">Правовые аспекты действий хозяев ноутбуков в случае их кражи</a><br />
+<img src="images/user_news.jpg" width="12" height="12" alt="" /><a href="#" class="tit">Harkonnen</a> &rarr;<a href="#" class="tit">Хостинг</a> &rarr; <a href="#">Приключения с Clodo: про земной и заоблачный подход к работе</a><br />
+<img src="images/user_news.jpg" width="12" height="12" alt="" /><a href="#" class="tit">xektorx</a> &rarr;<a href="#" class="tit">Google</a> &rarr; <a href="#">Google изменил дизайн редактора Google Docs</a><br />
+<img src="images/user_news.jpg" width="12" height="12" alt="" /><a href="#" class="tit">Dark Moth</a> &rarr;<a href="#" class="tit"> Железо</a> &rarr; <a href="#">Фантастика? Нет, Wacom!</a><br />
+<img src="images/user_news.jpg" width="12" height="12" alt="" /><a href="#" class="tit">Lux In Tenebris</a> &rarr;<a href="#" class="tit">Социальные сети </a>&rarr; <a href="#">Как был взломан Вконтакте.ру</a><br />
+<img src="images/user_news.jpg" width="12" height="12" alt="" /><a href="#" class="tit">Doman</a> &rarr;<a href="#" class="tit">Linux для всех</a> &rarr; <a href="#">Simply Linux. Свежий выпуск</a><br />
+<img src="images/user_news.jpg" width="12" height="12" alt="" /><a href="#" class="tit">Snapp</a> &rarr;<a href="#" class="tit">Блог компании Droider.Ru</a> &rarr; <a href="#">Droider Chart. Выпуск 67, прикладной</a><br />
+<a href="#" class="all_on"> &laquo; весь прямой эфир</a>
+				</div>
+			</div>
+        </div>
+	</div><!-- content-->
+
+</div><!-- wrapper -->
+
+<div id="footer">
+	<div class="left">
+		<p>
+			&copy; 2011 <a href="#">Дедукция</a> <br />
+			&mdash; проект <a href="#">Студии Сайтос</a>
+		</p>
+	</div>
+
+	<div class="right">
+        <form name="searchform" method="post" action="http://www.yandex.ru:8081/yandsearch">
+			<input type="text" name="login"  size="18" value="поиск по сайту" maxlength="20" class="search" onfocus="if (this.value == this.defaultValue){this.value = '';}if(this.value != this.defaultValue){this.select();}" onblur="if (this.value == ''){this.value = this.defaultValue;}if(this.value != this.defaultValue){this.value = this.value;}" />
+			<input type="image" src="images/search_but.jpg" name="serch" />
+		</form>
+	</div>
+
+</div><!-- #footer -->
+	
+
+</body>
+</html>

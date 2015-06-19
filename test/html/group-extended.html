@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Блокнот | Группы | Расширенный вид </title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="css/ui-lightness/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+  
+
+  <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+  <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  
+  <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/ie.css">
+  <![endif]-->
+  <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="css/ie7.css">
+  <![endif]-->
+</head>
+
+<body>
+<div id="wrapper">
+
+	<div id="header">
+    <div class="bottom-line"></div>
+    <div class="row-fluid">
+      <div class="span3">
+        <div class="logo"><a href="#"><img src="img/elem/logo.png" alt=""></a></div>
+      </div>
+      <div class="span9">
+        <div class="main-navigation logged-in">
+          <ul>
+            <li class="my-note current"><a href="#">Мой блокнот</a></li>
+            <li class="filter"><a href="#">Фильтры</a></li>
+            <li class="search"><a href="#">Поиск</a></li>
+            <li class="news"><a href="#">Уведомления<span class="news-numder">3</span></a></li>
+          </ul>
+        </div>        
+    
+        <div class="control-panel logged-in">
+          <ul>
+            <li class="location"><a href="#">Санкт-Петербург</a></li>
+            <li class="navigation-add-button"><a href="#">Добавить</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+	  <!--inner menu list-->
+	  <div class="fullwidth">
+		<div class="leftSideBar">
+		  <ul class="innerMenu">
+		    <li><a href="#"><img src="img/elem/icon1.png" alt=""/>Папки</a></li>
+		    <li><a href="#"><img src="img/elem/icon2.png" alt=""/>Записи</a></li>
+		    <li><a href="#"><img src="img/elem/icon3.png" alt=""/>Сообщения <span class="colorG">+18</span></a></li>
+		    <li><a href="#"><img src="img/elem/icon4.png" alt=""/>Места</a></li>
+		    <li><a class="active" href="#"><img src="img/elem/icon5.png" alt=""/>Группы</a></li>
+		    <li><a href="#"><img src="img/elem/icon6.png" alt=""/>Контакты</a></li>
+		  </ul>
+		</div>
+		<div class="rightSideBar">
+		  <ul class="innerMenu rightSideMenu">
+			<li><a href="#"><img src="img/elem/icon7.png" alt=""/>Настройки</a></li>
+			<li><a href="#"><img src="img/elem/icon8.png" alt=""/>Выход</a></li>
+		  </ul>	
+		</div>
+	  </div><!--end:inner menu list-->
+	</div><!-- #header-->
+
+	<div id="content">
+	  <div class="row-fluid wrapperGroupHolder"> 	
+		<div class="span12 headerGroup">
+		  <div class="groupLeft">
+			<h1>Группы</h1>
+			<ul class="wrapperGroup">
+			  <li class="expansionGroup active"><a href="#">Упрощенный вид</a></li>
+			  <li class="simpleGroup"><a href="#">Расширенный вид</a></li>			  
+			</ul>
+		  </div>
+		  <div class="groupRight">
+			<div class="buttonHolder">
+				<a class="blueButton" href="#">Добавить группу</a>
+			</div>
+		  </div>		  
+		</div>
+	  </div>
+	  
+	  <div class="row-fluid wrapperGroupContentHolder extended tabs"> 	
+		<div class="span3 left-side">
+	      <ul class="navGroupList">
+			<li><a href="#tab1"><span class="borderSpan"></span>Одноклассники<span class="activeBorder"></span></a></li>
+			<li><a href="#tab3"><span class="borderSpan"></span>Одногруппники<span class="activeBorder"></span></a></li>
+			<li><a href="#tab4"><span class="borderSpan"></span>Знакомые разные преразные<span class="activeBorder"></span></a></li>
+			<li><a href="#tab5"><span class="borderSpan"></span>Настоящие авторы моих статей<span class="activeBorder"></span></a></li>
+			<li><a href="#tab6"><span class="borderSpan"></span>Группа как группа<span class="activeBorder"></span></a></li>
+			<li><a href="#tab2"><span class="borderSpan"></span>Группа без названия<span class="activeBorder"></span></a></li>
+		  </ul>
+		  <div class="addButton">
+			<a href="#">Добавить группу</a>
+		  </div>
+		</div>
+		<div class="span9 main-content">
+			<div class="groupListBlock clearfix"  id="tab6">
+			<div class="headrGroup">
+			  <h1>Группа как группа (12 контактов)</h1>
+			  <div class="listDiskSpace-button">
+				<a href="#">Удалить</a>
+			  </div>	
+              <div class="buttonHolder">
+		        <a href="#">Редактировать</a>
+		      </div>			  
+			</div>
+			<ul class="innerListGroup sortable">
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Венглинский Дмитрий Сергеевич </a>Записей в совместном доступе: 18</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Василий Алибабаевич Пупкин </a>Записей в совместном доступе: 1</p>
+				<div class="listDiskSpace-button">
+			      <a href="#">Удалить</a>
+				</div>
+			  </li>
+			</ul>
+		  </div>
+			<div class="groupListBlock clearfix"  id="tab5">
+			<div class="headrGroup">
+			  <h1>Настоящие авторы моих статей (12 контактов)</h1>
+			  <div class="listDiskSpace-button">
+				<a href="#">Удалить</a>
+			  </div>	
+              <div class="buttonHolder">
+		        <a href="#">Редактировать</a>
+		      </div>			  
+			</div>
+			<ul class="innerListGroup sortable">
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Венглинский Дмитрий Сергеевич </a>Записей в совместном доступе: 18</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Василий Алибабаевич Пупкин </a>Записей в совместном доступе: 1</p>
+				<div class="listDiskSpace-button">
+			      <a href="#">Удалить</a>
+				</div>
+			  </li>
+			</ul>
+		  </div>
+		  <div class="groupListBlock clearfix"  id="tab1">
+			<div class="headrGroup">
+			  <h1>Одноклассники (12 контактов)</h1>
+			  <div class="listDiskSpace-button">
+				<a href="#">Удалить</a>
+			  </div>	
+              <div class="buttonHolder">
+		        <a href="#">Редактировать</a>
+		      </div>			  
+			</div>
+			<ul class="innerListGroup sortable">
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Венглинский Дмитрий Сергеевич </a>Записей в совместном доступе: 18</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Василий Алибабаевич Пупкин </a>Записей в совместном доступе: 1</p>
+				<div class="listDiskSpace-button">
+			      <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">operator8tv@gmail.com </a>Записей в совместном доступе: 42</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Варвара </a>Записей в совместном доступе: 7356</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">mhaff@mail.ru </a>Записей в совместном доступе: 18</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Венглинский Дмитрий Сергеевич </a>Записей в совместном доступе: 18</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Василий Алибабаевич Пупкин </a>Записей в совместном доступе: 1</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">operator8tv@gmail.com </a>Записей в совместном доступе: 42</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Варвара </a>Записей в совместном доступе: 7356</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">mhaff@mail.ru </a>Записей в совместном доступе: 18</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			</ul>
+		  </div>		
+		<div class="groupListBlock clearfix"  id="tab3">
+			<div class="headrGroup">
+			  <h1>Одногруппники (12 контактов)</h1>
+			  <div class="listDiskSpace-button">
+				<a href="#">Удалить</a>
+			  </div>	
+              <div class="buttonHolder">
+		        <a href="#">Редактировать</a>
+		      </div>			  
+			</div>
+			<ul class="innerListGroup sortable">
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Венглинский Дмитрий Сергеевич </a>Записей в совместном доступе: 18</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Василий Алибабаевич Пупкин </a>Записей в совместном доступе: 1</p>
+				<div class="listDiskSpace-button">
+			      <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">operator8tv@gmail.com </a>Записей в совместном доступе: 42</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Варвара </a>Записей в совместном доступе: 7356</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">mhaff@mail.ru </a>Записей в совместном доступе: 18</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Венглинский Дмитрий Сергеевич </a>Записей в совместном доступе: 18</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Василий Алибабаевич Пупкин </a>Записей в совместном доступе: 1</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">operator8tv@gmail.com </a>Записей в совместном доступе: 42</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Варвара </a>Записей в совместном доступе: 7356</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">mhaff@mail.ru </a>Записей в совместном доступе: 18</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			</ul>
+		  </div>		
+		 
+		  <div class="groupListBlock clearfix"  id="tab4">
+			<div class="headrGroup">
+			  <h1>Знакомые разные преразные (12 контактов)</h1>
+			  <div class="listDiskSpace-button">
+				<a href="#">Удалить</a>
+			  </div>	
+              <div class="buttonHolder">
+		        <a href="#">Редактировать</a>
+		      </div>			  
+			</div>
+			<ul class="innerListGroup sortable">
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Венглинский Дмитрий Сергеевич </a>Записей в совместном доступе: 18</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Василий Алибабаевич Пупкин </a>Записей в совместном доступе: 1</p>
+				<div class="listDiskSpace-button">
+			      <a href="#">Удалить</a>
+				</div>
+			  </li>
+			</ul>
+		  </div>
+		  <div class="groupListBlock clearfix"  id="tab2">
+			<div class="headrGroup">
+			  <h1>Группа без названия (12 контактов)</h1>
+			  <div class="listDiskSpace-button">
+				<a href="#">Удалить</a>
+			  </div>	
+              <div class="buttonHolder">
+		        <a href="#">Редактировать</a>
+		      </div>			  
+			</div>
+			<ul class="innerListGroup sortable">
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Венглинский Дмитрий Сергеевич </a>Записей в совместном доступе: 18</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Василий Алибабаевич Пупкин </a>Записей в совместном доступе: 1</p>
+				<div class="listDiskSpace-button">
+			      <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">operator8tv@gmail.com </a>Записей в совместном доступе: 42</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Варвара </a>Записей в совместном доступе: 7356</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">mhaff@mail.ru </a>Записей в совместном доступе: 18</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Венглинский Дмитрий Сергеевич </a>Записей в совместном доступе: 18</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			</ul>
+		  </div>
+		</div>	
+	  </div>	
+	   <div class="row-fluid wrapperGroupContentHolder  normal">
+	    <div class="span12 simpleGroupHolder">
+		  <div class="groupListBlock clearfix">
+			<div class="logoGroup">
+			  <div class="headerImgHolderGroup">
+				<img src="img/content/groupLogo.png" alt=""/>
+				<span>группа</span>
+			  </div>
+			  <div class="button-holder">
+			    <a href="#" class="green-button">Добавить контакт</a>
+			  </div>			  
+			</div>
+			<div class="headrGroup">
+			  <h1>Группа без названия (12 контактов)</h1>
+			  <div class="listDiskSpace-button">
+				<a href="#">Удалить</a>
+			  </div>	
+              <div class="buttonHolder">
+		        <a href="#">Редактировать</a>
+		      </div>			  
+			</div>
+			<ul class="innerListGroup sortable">
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Венглинский Дмитрий Сергеевич </a>Записей в совместном доступе: 18</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Василий Алибабаевич Пупкин </a>Записей в совместном доступе: 1</p>
+				<div class="listDiskSpace-button">
+			      <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">operator8tv@gmail.com </a>Записей в совместном доступе: 42</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Варвара </a>Записей в совместном доступе: 7356</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">mhaff@mail.ru </a>Записей в совместном доступе: 18</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Венглинский Дмитрий Сергеевич </a>Записей в совместном доступе: 18</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			</ul>
+		  </div>
+		  <div class="groupListBlock clearfix">
+			<div class="logoGroup">
+			  <div class="headerImgHolderGroup">
+				<img src="img/content/groupLogo.png" alt=""/>
+				<span>группа</span>
+			  </div>
+			  <div class="button-holder">
+			    <a href="#" class="green-button">Добавить контакт</a>
+			  </div>			  
+			</div>
+			<div class="headrGroup">
+			  <h1>Группа без названия (12 контактов)</h1>
+			  <div class="listDiskSpace-button">
+				<a href="#">Удалить</a>
+			  </div>	
+              <div class="buttonHolder">
+		        <a href="#">Редактировать</a>
+		      </div>			  
+			</div>
+			<ul class="innerListGroup sortable">
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Венглинский Дмитрий Сергеевич </a>Записей в совместном доступе: 18</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Василий Алибабаевич Пупкин </a>Записей в совместном доступе: 1</p>
+				<div class="listDiskSpace-button">
+			      <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">operator8tv@gmail.com </a>Записей в совместном доступе: 42</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Варвара </a>Записей в совместном доступе: 7356</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">mhaff@mail.ru </a>Записей в совместном доступе: 18</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Венглинский Дмитрий Сергеевич </a>Записей в совместном доступе: 18</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			</ul>
+		  </div>
+          <div class="groupListBlock clearfix">
+			<div class="logoGroup">
+			  <div class="headerImgHolderGroup">
+				<img src="img/content/groupLogo.png" alt=""/>
+				<span>группа</span>
+			  </div>
+			  <div class="button-holder">
+			    <a href="#" class="green-button">Добавить контакт</a>
+			  </div>			  
+			</div>
+			<div class="headrGroup">
+			  <h1>Группа без названия (12 контактов)</h1>
+			  <div class="listDiskSpace-button">
+				<a href="#">Удалить</a>
+			  </div>	
+              <div class="buttonHolder">
+		        <a href="#">Редактировать</a>
+		      </div>			  
+			</div>
+			<ul class="innerListGroup sortable">
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Венглинский Дмитрий Сергеевич </a>Записей в совместном доступе: 18</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Василий Алибабаевич Пупкин </a>Записей в совместном доступе: 1</p>
+				<div class="listDiskSpace-button">
+			      <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">operator8tv@gmail.com </a>Записей в совместном доступе: 42</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Варвара </a>Записей в совместном доступе: 7356</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">mhaff@mail.ru </a>Записей в совместном доступе: 18</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Венглинский Дмитрий Сергеевич </a>Записей в совместном доступе: 18</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			</ul>
+		  </div>
+		  <div class="groupListBlock clearfix">
+			<div class="logoGroup">
+			  <div class="headerImgHolderGroup">
+				<img src="img/content/groupLogo.png" alt=""/>
+				<span>группа</span>
+			  </div>
+			  <div class="button-holder">
+			    <a href="#" class="green-button">Добавить контакт</a>
+			  </div>			  
+			</div>
+			<div class="headrGroup">
+			  <h1>Группа без названия (12 контактов)</h1>
+			  <div class="listDiskSpace-button">
+				<a href="#">Удалить</a>
+			  </div>	
+              <div class="buttonHolder">
+		        <a href="#">Редактировать</a>
+		      </div>			  
+			</div>
+			<ul class="innerListGroup sortable">
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Венглинский Дмитрий Сергеевич </a>Записей в совместном доступе: 18</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Василий Алибабаевич Пупкин </a>Записей в совместном доступе: 1</p>
+				<div class="listDiskSpace-button">
+			      <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">operator8tv@gmail.com </a>Записей в совместном доступе: 42</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Варвара </a>Записей в совместном доступе: 7356</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">mhaff@mail.ru </a>Записей в совместном доступе: 18</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Венглинский Дмитрий Сергеевич </a>Записей в совместном доступе: 18</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			</ul>
+		  </div>
+		  <div class="groupListBlock clearfix">
+			<div class="logoGroup">
+			  <div class="headerImgHolderGroup">
+				<img src="img/content/groupLogo.png" alt=""/>
+				<span>группа</span>
+			  </div>
+			  <div class="button-holder">
+			    <a href="#" class="green-button">Добавить контакт</a>
+			  </div>			  
+			</div>
+			<div class="headrGroup">
+			  <h1>Группа без названия (12 контактов)</h1>
+			  <div class="listDiskSpace-button">
+				<a href="#">Удалить</a>
+			  </div>	
+              <div class="buttonHolder">
+		        <a href="#">Редактировать</a>
+		      </div>			  
+			</div>
+			<ul class="innerListGroup sortable">
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Венглинский Дмитрий Сергеевич </a>Записей в совместном доступе: 18</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Василий Алибабаевич Пупкин </a>Записей в совместном доступе: 1</p>
+				<div class="listDiskSpace-button">
+			      <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">operator8tv@gmail.com </a>Записей в совместном доступе: 42</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Варвара </a>Записей в совместном доступе: 7356</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">mhaff@mail.ru </a>Записей в совместном доступе: 18</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			  <li>
+			  	<img src="img/elem/drag.png" class="handlerIco" alt="">
+				<p><a href="#">Венглинский Дмитрий Сергеевич </a>Записей в совместном доступе: 18</p>
+				<div class="listDiskSpace-button">
+				  <a href="#">Удалить</a>
+				</div>
+			  </li>
+			</ul>
+		  </div>	
+	    </div>	
+	  </div>
+	</div><!-- #content-->
+
+</div><!-- #wrapper -->
+
+<div id="footer">
+  <div class="row-fluid">
+    <div class="span3">
+      <a href="#" class="bottom-logo"><img src="img/elem/logo.png" alt=""></a>
+      <ul class="social-buttons">
+        <li><a href="#"><img src="img/icons/facebook-ico.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/google-ico.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/link-ico.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/mail-co.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/ok-ico.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/vk-ico.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/yandex-ico.png" alt=""></a></li>
+      </ul>
+      <p class="copyright">
+        © 2013 Все права защищены
+      </p>
+    </div>
+    <div class="span3">
+      <ul class="bottom-nav">
+        <li class="main-link"><a href="#">О сервисе</a></li>
+        <li><a href="#">О Блокноте</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Условия договора</a></li>
+        <li><a href="#">Политика конфиденциальности</a></li>
+        <li><a href="#">Разработчики сервиса</a></li>
+      </ul>
+    </div>
+    <div class="span3">
+      <ul class="bottom-nav">
+        <li class="main-link"><a href="#">Блокнот пользователя</a></li>
+        <li><a href="#">Записи</a></li>
+        <li><a href="#">Сообщения</a><span class="number">+18</span></li>
+        <li><a href="#">Места</a></li>
+        <li><a href="#">Настройки</a></li>
+        <li><a href="#">Выход</a></li>
+      </ul>
+    </div>
+    <div class="span3">
+      <a href="#" class="to-top-link">Поднять</a>
+      <p>Использовано дискового пространства:<br>93 Mb из 100 Mb (93%)</p>
+    </div>
+  </div>
+</div><!-- #footer -->
+
+</body>
+</html>

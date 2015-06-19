@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Home Page</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" href="favicon.ico"> 
+  <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">  
+  <script type="text/javascript" src="js/TweenMax.min.js"></script>
+  <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script> 
+
+  <style>
+
+  body{
+    background: #ccc;
+  }
+	.egg{
+    width: 210px;
+    height: 278px;
+		background: url("img/content/egg.png") no-repeat 0 0;
+    position: relative;
+    margin: 200px auto 0;
+	}
+		.topHalf{
+      background: url("img/content/egg-top-half.png") no-repeat 0 0;
+			width: 201px;
+			height: 158px;
+			position: relative;
+			margin: 0 auto;
+			display: none;      
+		}
+
+		.bottomHalf{
+      background: url("img/content/egg-bottom-half.png") no-repeat 0 0;
+			width: 201px;
+			height: 161px;
+		    margin: -41px 0 0 11px;
+		    display: none;		
+		}
+
+    .topHalf.complete{
+      left: 100px;
+      background: url("img/content/egg-top-half-complete.png") no-repeat  76px 48px;
+    }
+
+    .bottomHalf.complete{
+      background: url("img/content/egg-bottom-half-complete.png") no-repeat 50px 40px;
+    }
+
+	.getStarted{
+    background: url("img/content/egg-button.png") no-repeat 0 0;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    left: 50px;
+    padding: 10px 0;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    top: 125px;
+    width: 121px;
+    z-index: 10;
+	}
+    .egg-slider{
+      display: none;
+      position: absolute;
+      z-index: 11;
+      top: -140px;
+      left: 140px;
+      width: 228px;
+      height: 358px;
+    }
+      .egg-slider li{
+        position: absolute;
+        top: 0;
+        left: 0;
+        list-style: none;
+        border: 5px solid #faf0e1;
+        -moz-box-shadow: 3px 3px 8px -3px #333; 
+        -webkit-box-shadow: 3px 3px 8px -3px #333; 
+        box-shadow: 3px 3px 8px -3px #333;
+      }
+        .egg-slider li img{
+          display: block;
+        }
+         .egg-slider li::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          box-shadow: inset 0 0 3px rgba(0,0,0,.6);
+          -moz-box-shadow: inset 0 0 3px rgba(0,0,0,.6);
+          -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,.6);
+        } 
+      .next_card, 
+      .prev_card{
+        display: block;
+        position: absolute;
+        width: 40px;
+        height: 21px;
+        background: #000;
+        left:50%;
+        margin-left: -20px; 
+        text-indent: -9999px;
+
+      }
+      .next_card{
+        top: -50px;
+        background: url("img/content/next-arrow.png") 0 0 no-repeat;
+      }
+      .prev_card{
+        bottom: -50px;
+        background: url("img/content/prev-arrow.png") 0 0 no-repeat;
+      }
+  </style> 
+
+  <script>
+  	$(window).load(function(){
+    // Adding popup trigger 
+      /*$(".getStarted").fancybox({
+        padding: 0,
+        openEffect: "elastic"
+      });*/
+    
+    // Egg Animation 
+  		$(".getStarted").click(function(){
+        $(this).hide();
+        $(".egg").css({"background" : "none"})
+
+        var topHalf = $(".topHalf"),
+            bottomHalf = $(".bottomHalf"),
+            tl = new TimelineLite();
+        
+        topHalf.show();
+        bottomHalf.show();
+        
+        tl.to(topHalf, 0.4, {top:"-=50px", left: "+=50px", rotation:"45deg"})
+          .to(topHalf, 1, {top:"+=172px", left: "+=275px", scale:0.5, rotation:"125deg", ease:Back.easeOut,onComplete:completeHandler});
+        TweenLite.to(bottomHalf, 1, {scale:0.5})
+        
+        function completeHandler(){
+          topHalf.removeAttr("style").css({
+            "display": "block",
+            top: "100px",
+            left: "300px"
+          }).addClass("complete");
+          $(".egg-slider").fadeIn();
+        }
+
+
+  		});
+
+
+/*********************************************
+*             EGG CARDS SLIDER                                          
+**********************************************/
+    // slider container
+    var container = $(".egg-slider"),
+        browser = navigator.userAgent.toLowerCase(),
+        index = browser.indexOf("msie"),
+        user = browser.substring(index);
+        user = +user.substring(5,7);
+       /*if(user && user < 9){
+        console.log("Ie < 9");
+        current.css('z-index', 20);
+        $(".egg-slider li").each(function(i){
+          $(this).css({
+              'z-index' :20 - i
+          });
+        });
+        return false;
+      }*/
+   
+    // Slider create and rotate images
+      $(".egg-slider li").each(function(i){
+        var r = Math.floor(Math.random()*15)-7;
+        if(i > 0){
+          $(this).css({
+              '-moz-transform'    :'rotate('+r+'deg)',
+              '-webkit-transform' :'rotate('+r+'deg)',
+              'transform'         :'rotate('+r+'deg)'
+          });
+        }
+         $(this).css({
+          'z-index':20 - i
+         })
+      })
+        
+    // END 
+
+    // Next button
+    $('.next_card').bind('click',function(){
+      var current = container.find('li:last');    
+      var r = Math.floor(Math.random()*15)-7;
+       
+      // Card moving animation
+      current.animate({
+          'marginLeft':'250px',
+          'marginTop':'-385px'
+      },600,function(){
+        $(this).insertBefore(container.find('li:first'))
+        .css({
+         '-moz-transform'    :'rotate('+r+'deg)',
+         '-webkit-transform' :'rotate('+r+'deg)',
+         'transform'         :'rotate('+r+'deg)'
+        })
+        .animate({
+         'marginLeft':0,
+         'marginTop' :0,
+         'z-index' :20
+         
+        },600,function(){
+
+        });
+
+        $(".egg-slider li").each(function(i){
+          $(this).css({
+              'z-index' :20 - i
+          });
+        });
+
+      });
+
+      //animation end
+      
+      return false;
+    });
+    
+    // prev button
+    $('.prev_card').bind('click',function(){
+      var current = container.find('li:first');
+      var r = Math.floor(Math.random()*15)-7;
+
+      current.animate({
+          'marginLeft':'-250px',
+          'marginTop':'185px'
+      },600,function(){
+        $(this).insertAfter(container.find('li:last'))
+        .css({
+         '-moz-transform'    :'rotate('+r+'deg)',
+         '-webkit-transform' :'rotate('+r+'deg)',
+         'transform'         :'rotate('+r+'deg)'
+        })
+        .animate({
+         'marginLeft':0,
+         'marginTop' :0,
+         'z-index' :17
+         
+        },600,function(){
+
+        });
+
+        $(".egg-slider li").each(function(i){
+          $(this).css({
+              'z-index' :20 - i
+          });
+        });
+
+      });
+      return false;
+    });
+
+/*********************************************
+*       (END)    EGG CARDS SLIDER                                          
+**********************************************/
+
+	});
+  </script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div class="egg">
+			<a href="#" class="getStarted">Get Started</a>
+			
+      <div class="egg-slider">
+        <ul>
+          <li><img src="img/content/slide1.png" alt=""></li>
+          <li><img src="img/content/slide2.png" alt=""></li>
+          <li><img src="img/content/slide3.png" alt=""></li>
+          <li><img src="img/content/slide4.png" alt=""></li>
+        </ul>
+        <a href="#" class="next_card">Next</a>
+        <a href="#" class="prev_card">Prev</a>  
+      </div>
+      <div class="topHalf"></div>
+			<div class="bottomHalf"></div>
+		</div>
+	</div>
+</body>
+</html>

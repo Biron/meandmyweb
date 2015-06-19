@@ -1,0 +1,395 @@
+ul.innerMenu li a{
+	position:relative;
+	padding-left: 25px;
+}
+ul.innerMenu li a img {
+	float: left;
+	margin: 5px 5px 5px 0;
+	display: block;
+	position:absolute;
+	left: 5px;
+}
+ul.innerMenu li a span {
+float: left;
+display: inline-block;
+}
+
+#header{
+	height: auto;
+	border-bottom: none;
+
+}
+.bottom-line{
+	top:41px;
+	top: 42px\0/;
+	z-index: 200;
+}
+.form-row .buttonHolder{
+	top:3px;
+	right: 4px;
+	z-index: 2000;
+}
+}
+.form-row .buttonHolder.submit{
+	top:3px;
+	right: 0px;
+	z-index: 2000;
+}
+input[type="file"]{
+	text-align: left;
+	
+}
+
+.main-navigation li.current a span{
+	top:38px;
+	top: 39px\0/;
+	z-index: 1000;
+}
+
+input[type="text"], input[type="email"],input[type="password"], textarea, select,.filetext{
+	background: url("../img/elem/input-bg.png") no-repeat 0 0;
+}
+
+ul.innerMenu li a:hover, ul.innerMenu li a.active{
+	background: url("../img/content/hover-sub-links-bg.png") no-repeat 0 0;
+}
+input[type="submit"]:active,
+input[type="submit"]:focus,
+.submitButton:active,
+.submitButton:focus,
+.submitButton.focus{
+	background: #246da0 url("../img/elem/save-button-active.png") no-repeat 0 0;
+	padding-bottom: 10px;
+}
+
+.news-numder{
+	background: url("../img/elem/number-bg.png") no-repeat 0 2px !important;
+}
+
+.buttonHolder a,
+.listDiskSpace-button a{
+	padding: 0 0px 1px 6px;
+	background: url("../img/elem/grey-button-left.png") no-repeat 0% 0;
+	display: inline-block;
+	height: 22px
+
+}
+.buttonHolder a:hover,
+.listDiskSpace-button a:hover{
+	background: url("../img/elem/grey-button-left.png") no-repeat 0% -24px;
+}
+.buttonHolder.focus a,
+.listDiskSpace-button.focus a{
+	background: url("../img/elem/grey-button-left.png") no-repeat 0% -48px;
+}
+
+.listDiskSpace-button a span,
+.buttonHolder a span {
+	background: url("../img/elem/grey-button-right.png") no-repeat 100% 0;
+	display: block;
+	cursor: pointer;
+	padding: 2px 5px 4px 0; 
+}
+.listDiskSpace-button a span:hover,
+.buttonHolder a span:hover{
+	background: url("../img/elem/grey-button-right.png") no-repeat 100% -24px;
+}
+.listDiskSpace-button a:active,
+.buttonHolder a:active {
+	color: #246da0;
+}
+.buttonHolder.focus a span,
+.listDiskSpace-button.focus a span {
+	background: url("../img/elem/grey-button-right.png") no-repeat 100% -48px;
+	color: #505050;
+}
+.buttonHolder.enter-button a{
+	height: 31px;display: block;
+	padding: 0 0 0 9px;
+	background: url("../img/elem/big-grey-button-left.png") no-repeat 0% 0px;}
+.buttonHolder.enter-button a:hover{
+	height: 31px;display: block;
+	padding: 0 0 0 9px;
+	background: url("../img/elem/big-grey-button-left.png") no-repeat 0% -35px;}
+.buttonHolder.enter-button.focus a,
+ .buttonHolder.enter-button a:active{
+	background: url("../img/elem/big-grey-button-left.png") no-repeat 0% -71px;}
+
+.buttonHolder.enter-button a span{
+	display: block;
+	cursor: pointer;
+	height: 18px;
+	height: 31px\0/;
+	padding: 7px 10px 7px 0;
+	background: url("../img/elem/big-grey-button-right.png") no-repeat 100% 0px;
+}
+.buttonHolder.enter-button a span:hover,
+.buttonHolder.enter-button a:hover span{
+	display: block;
+	cursor: pointer;
+	height: 18px;
+	height: 31px\0/;
+	background: url("../img/elem/big-grey-button-right.png") no-repeat 100% -35px;}
+.buttonHolder.enter-button.focus a span,
+ .buttonHolder.enter-button a:active span{
+	background: url("../img/elem/big-grey-button-right.png") no-repeat 100% -71px;}
+
+
+.main-navigation li a, .control-panel li a
+{
+	height: 16px;
+	height: 42px \0/;
+}
+
+
+/*----------------------------------
+Blue button
+----------------------------------*/
+.buttonHolder .blueButton{
+	padding: 0 0px 1px 5px;
+	background: url("../img/elem/big-blue-button.png") no-repeat 0% 0;
+	display: inline-block;
+	height: 25px;
+	color: #fff;
+}
+	.buttonHolder .blueButton:hover{
+		background: url("../img/elem/big-blue-button.png") no-repeat 0% -30px;
+		color: #fff;
+	}
+	.buttonHolder .blueButton:active,
+	.buttonHolder.focus .blueButton{
+		background: url("../img/elem/big-blue-button.png") no-repeat 0% -60px;
+		color: #fff;
+	}
+
+	.buttonHolder a.blueButton:active span,
+	.buttonHolder.focus a.blueButton span{
+		background: url("../img/elem/big-blue-button-right.png") no-repeat 100% -60px;
+	}
+
+	.buttonHolder .blueButton span{
+		background: url("../img/elem/big-blue-button-right.png") no-repeat 100% 0;
+		display: inline-block;
+		height: 25px;
+		padding: 0px 10px 0px 5px;
+	}
+		.buttonHolder .blueButton:hover span{
+			background: url("../img/elem/big-blue-button-right.png") no-repeat 100% -30px;
+		}
+
+
+.buttonHolder .blueButtonS{
+	padding: 0 0px 1px 5px;
+	background: url("../img/elem/blueButtonSmall-left.png") no-repeat 0% 0;
+	display: inline-block;
+	height: 21px;
+	color: #fff;
+}
+	.buttonHolder .blueButtonS:hover{
+		background: url("../img/elem/blueButtonSmall-left.png") no-repeat 0% -25px;
+		color: #fff;
+	}
+	.buttonHolder .blueButtonS:active,
+	.buttonHolder.focus .blueButtonS{
+		background: url("../img/elem/blueButtonSmall-left.png") no-repeat 0% -50px;
+		color: #fff;
+	}
+
+	.buttonHolder .blueButtonS span{
+		background: url("../img/elem/blueButtonSmall-right.png") no-repeat 100% 0;
+		display: inline-block;
+		height: 21px;
+		padding: 0px 10px 0px 5px;
+	}
+		.buttonHolder .blueButtonS:hover span{
+			background: url("../img/elem/blueButtonSmall-right.png") no-repeat 100% -25px;
+		}
+
+	.buttonHolder .blueButtonS:active span,
+	.buttonHolder.focus .blueButtonS span{
+		background: url("../img/elem/blueButtonSmall-right.png") no-repeat 100% -50px;
+		color: #fff;
+	}
+
+/*----------------------------------
+Greeen button
+----------------------------------*/
+
+.filter-block .green-button,
+.subscribe-block .button-holder .green-button,
+.green-button{ 
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 10px 10px 0;
+	height: 18px;
+	height: 28px\0/;
+	background: url("../img/elem/green-button-right.png") no-repeat 100% 0px;}
+.filter-block .green-button:hover,
+.subscribe-block .button-holder .green-button:hover,
+.green-button:hover {
+	background: url("../img/elem/green-button-right.png") no-repeat 100% -31px;
+}
+
+.filter-block.focus .green-button,
+.subscribe-block .button-holder .focus .green-button,
+.green-wrap.focus .green-button/*,
+.green-button:focus*/
+ {
+ 	background: url("../img/elem/green-button-right.png") no-repeat 100% -64px;
+	color: #fff;
+}
+.green-wrap{
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 0 0px 7px; 
+	background: url("../img/elem/green-button-left.png") no-repeat 0 0px;
+}
+.green-wrap:hover{
+	background: url("../img/elem/green-button-left.png") no-repeat 0 -31px;
+}
+.green-wrap.focus{
+	background: url("../img/elem/green-button-left.png") no-repeat 0 -64px;
+}
+.green-button,
+.green-button:hover{
+	background-color: transparent;
+	padding-top: 0px;
+	padding-bottom: 0;
+	border-top: 0;
+}
+
+.filter-block .green-button span{
+		display: inline-block;
+		padding-left: 25px;
+		background-image: url("../img/icons/icons.png");
+		background-repeat:  no-repeat;
+		background-position: 6px -48px; 
+		margin-left: -5px
+}
+.filter-block .green-button:hover{
+	margin-bottom: -2px;
+}
+.subscribe-block .button-holder .green-button span{
+			padding-left: 25px;
+			background-image: url("../img/icons/icons.png");
+			background-repeat:  no-repeat;
+			background-position: 6px -292px;
+			margin-left: -5px
+		}
+
+.subscribe-form input[type="text"]{
+	background: url("../img/elem/blue-input.png") no-repeat 0 0;
+	width: 96%
+}
+
+.filter-block{
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+src='img/elem/filter-bg-blue.png',
+sizingMethod='scale');
+
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
+src='img/elem/filter-bg-blue.png',
+sizingMethod='scale')";
+}
+ul.img-list li a:hover{
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/elem/av-img-bg.png',sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/elem/av-img-bg.png',sizingMethod='scale')";
+}
+
+.data-wrap{
+	position: relative;
+	float: left;
+}
+.data-wrap input{
+	background: url("../img/content/input-bg.png") no-repeat 0 0 !important;
+}
+	.data-icon{
+		background:url("../img/elem/data-bg.png") no-repeat scroll 0 0 #FFFFFF;
+		position: absolute;
+		left: 10px;
+		top:6px;
+		display: block;
+		width: 14px;
+		height: 12px;
+	}
+
+
+ul.wrapperGroup li.active,
+ul.wrapperGroup li:hover{
+	background: url("../img/elem/grey-selector-bg.png") no-repeat 0 0;
+	padding-left: 5px;
+}
+ul.wrapperGroup li.active a,
+ul.wrapperGroup li:hover a{
+	margin-left: -5px;
+}
+	ul.wrapperGroup li.active div,
+	ul.wrapperGroup li:hover div{
+		background: url("../img/elem/grey-selector-bg-right.png") no-repeat 100% 0;
+	}
+
+/*ul.wrapperGroup li.expansionGroup a:hover, 
+ul.wrapperGroup li.expansionGroup.active a{
+
+}*/
+
+ul.innerMenu li a img {
+	float:left;
+	position:absolute;
+	left:7px;
+	top:0px;
+}
+ul.innerMenu li a:hover img,ul.innerMenu li a.active img {
+	top:-29px;
+}
+.main-navigation li a, .control-panel li a{
+	padding-top: 12px;
+}
+
+.make-short-block .buttonHolder{
+	width: 200px;
+}
+
+.content-hoder .rightSideFormCrad{
+	width:60%;
+}
+.wrapperGroupHolder .folderSearchHolder{
+	float: right;
+	margin-right: 24px;
+}
+
+.groupListBlock .innerListGroup li{
+	width: 95% !important;
+	padding-left: 5%;
+
+}
+
+ul.menuMyNotebook li a,
+ul.navigationMyNotebook li a,
+.durationList a,
+.pagination ul li a{
+	behavior: url("./css/PIE.htc");
+}
+
+
+.checkBox, .radio {
+	visibility: hidden;
+}
+
+ul.listTime>li input[type="text"]{
+	background img:url('../img/icons/cal-icon.png');
+}
+
+/**/
+	.hoverButtonUpload a.uploadStyle{
+		background: none!important;
+	}
+/**/
+/*****/
+.fakefile .buttonHolder a span{
+	background: none;
+}
+	.fakefile .buttonHolder.focus a span{
+		color:#fff;
+	}
+/*****/

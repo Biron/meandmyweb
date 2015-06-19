@@ -1,0 +1,5 @@
+#jcarousel li div.middle{
+    border: none;
+    background: url("../images/ei_car_bg.png") no-repeat scroll 0 1px transparent;
+    width: 132px;
+}

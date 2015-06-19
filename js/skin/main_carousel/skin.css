@@ -1,0 +1,38 @@
+.jcarousel-skin-big .jcarousel-container {background-color: transparent;}
+.jcarousel-skin-big .jcarousel-direction-rtl {direction: rtl;}
+.jcarousel-skin-big .jcarousel-container-horizontal{
+    width:1160px;
+    padding:0;
+	margin:0 auto;
+}
+.jcarousel-skin-big .jcarousel-clip-horizontal {
+    width:1160px;
+    padding:0;
+}
+.jcarousel-skin-big .jcarousel-item {
+    width:173px;
+    padding:12px 10px;
+	margin:0 20px;
+}
+.jcarousel-skin-big .jcarousel-direction-rtl .jcarousel-item-horizontal {margin: 0px auto;}
+/*  Horizontal Buttons */
+.jcarousel-skin-big .jcarousel-next-horizontal {
+    position: absolute;
+	top:50%;
+	right:-50px;
+	width: 55px;
+    height: 105px;
+    cursor: pointer;
+	margin-top:-52px;
+    background: transparent url(arrows.png) no-repeat -55px 0;
+}
+.jcarousel-skin-big .jcarousel-prev-horizontal{
+    cursor: pointer;
+	position:absolute;
+	top:50%;
+	left:-55px;
+	width: 55px;
+    height: 105px;
+    background: transparent url(arrows.png) no-repeat 0 0;
+	margin-top:-52px;
+}

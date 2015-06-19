@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Блокнот | Сообщения </title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  
+
+  <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  
+  <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/ie.css">
+  <![endif]-->
+  <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="css/ie7.css">
+  <![endif]-->
+</head>
+
+<body>
+<div id="wrapper">
+
+	<div id="header">
+    <div class="bottom-line"></div>
+    <div class="row-fluid">
+      <div class="span3">
+        <div class="logo"><a href="#"><img src="img/elem/logo.png" alt=""></a></div>
+      </div>
+      <div class="span9">
+        <div class="main-navigation logged-in">
+          <ul>
+            <li class="my-note current"><a href="#">Мой блокнот</a></li>
+            <li class="filter"><a href="#">Фильтры</a></li>
+            <li class="search"><a href="#">Поиск</a></li>
+            <li class="news"><a href="#">Уведомления<span class="news-numder">3</span></a></li>
+          </ul>
+        </div>        
+    
+        <div class="control-panel logged-in">
+          <ul>
+            <li class="location"><a href="#">Санкт-Петербург</a></li>
+            <li class="navigation-add-button"><a href="#">Добавить</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+	  <!--inner menu list-->
+	  <div class="fullwidth">
+		<div class="leftSideBar">
+		  <ul class="innerMenu">
+		    <li><a href="#"><img src="img/elem/icon1.png" alt=""/>Папки</a></li>
+		    <li><a href="#"><img src="img/elem/icon2.png" alt=""/>Записи</a></li>
+		    <li><a  class="active" href="#"><img src="img/elem/icon3.png" alt=""/>Сообщения <span class="colorG">+18</span></a></li>
+		    <li><a href="#"><img src="img/elem/icon4.png" alt=""/>Места</a></li>
+		    <li><a href="#"><img src="img/elem/icon5.png" alt=""/>Группы</a></li>
+		    <li><a href="#"><img src="img/elem/icon6.png" alt=""/>Контакты</a></li>
+		  </ul>
+		</div>
+		<div class="rightSideBar">
+		  <ul class="innerMenu rightSideMenu">
+			<li><a href="#"><img src="img/elem/icon7.png" alt=""/>Настройки</a></li>
+			<li><a href="#"><img src="img/elem/icon8.png" alt=""/>Выход</a></li>
+		  </ul>	
+		</div>
+	  </div><!--end:inner menu list-->
+	</div><!-- #header-->
+
+	<div id="content">
+	  <div class="row-fluid wrapperGroupHolder"> 	
+		<div class="span12 headerGroup">
+		  <div class="groupLeft">
+			<h1>Сообщения</h1>
+			<ul class="wrapperGroup">
+			  <li class="active"><a href="#">Все сообщения</a></li>		
+			  <li><a href="#">Новые</a></li>	  	
+			  <li><a href="#">Входящие</a></li>	  	
+			  <li><a href="#">Исходящие</a></li>	  
+			</ul>
+		  </div>		  
+		</div>
+	  </div>
+	  
+	  <div class="row-fluid wrapperGroupContentHolder"> 	
+		<div class="span12 messageHolder">
+			
+      		
+			<ul class="messageList">
+				<li class="not-read">
+					<div class="mCheck">
+						<div class="checkbox-holder">
+				            <span><input class="checkBox" type="checkbox" name="visibleall"/></span>
+				        </div>
+					</div>
+					<div class="avatar">
+						<div class="avatar-image size-20"><img src="img/content/avatar.jpg" alt=""></div>
+					</div>
+					<span class="mTheme">
+						<a href="#">Тема сообщения</a>
+					</span>
+					<span class="mShort">
+						Привет. Написал Тебе это все еще в понедельник, но увы, только сейчас получается отправить..
+					</span>
+					<span class="mDate">
+						22.01
+					</span>
+					<span class="fileIco">
+						<img src="img/elem/fileIco.png" alt="">
+					</span>
+				</li>
+				<li class="not-read">
+					<div class="mCheck">
+						<div class="checkbox-holder">
+				            <span><input class="checkBox" type="checkbox" name="visibleall"/></span>
+				        </div>
+					</div>
+					<div class="avatar">
+						<div class="avatar-image size-20"><img src="img/content/avatar.jpg" alt=""></div>
+					</div>
+					<span class="mTheme">
+						<a href="#">Что-то важное</a>
+					</span>
+					<span class="mShort">
+						This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+					</span>
+					<span class="mDate">
+						22.01
+					</span>
+					<span class="fileIco">
+						<img src="img/elem/fileIco.png" alt="">
+					</span>
+				</li>
+				<li class="not-read">
+					<div class="mCheck">
+						<div class="checkbox-holder">
+				            <span><input class="checkBox" type="checkbox" name="visibleall"/></span>
+				        </div>
+					</div>
+					<div class="avatar">
+						<div class="avatar-image size-20"><img src="img/content/avatar.jpg" alt=""></div>
+					</div>
+					<span class="mTheme">
+						<a href="#">Ещё одна какая-то тема</a>
+					</span>
+					<span class="mShort">
+						Morbi accumsan ipsum velit. Nam nec tellus a odio tinciduntThis is Photoshop's version  of Lorem Ipsum
+					</span>
+					<span class="mDate">
+						22.01
+					</span>
+					<span class="fileIco"></span>
+				</li>
+				<li class="">
+					<div class="mCheck">
+						<div class="checkbox-holder">
+				            <span><input class="checkBox" type="checkbox" name="visibleall"/></span>
+				        </div>
+					</div>
+					<div class="avatar">
+						<div class="avatar-image size-20"><img src="img/content/avatar.jpg" alt=""></div>
+					</div>
+					<span class="mTheme">
+						<a href="#">Тема сообщения</a>
+					</span>
+					<span class="mShort">
+						Привет. Написал Тебе это все еще в понедельник, но увы, только сейчас получается отправить..
+					</span>
+					<span class="mDate">
+						22.01
+					</span>
+					<span class="fileIco">
+						<img src="img/elem/fileIco.png" alt="">
+					</span>
+				</li>
+				<li class="">
+					<div class="mCheck">
+						<div class="checkbox-holder">
+				            <span><input class="checkBox" type="checkbox" name="visibleall"/></span>
+				        </div>
+					</div>
+					<div class="avatar">
+						<div class="avatar-image size-20"><img src="img/content/avatar.jpg" alt=""></div>
+					</div>
+					<span class="mTheme">
+						<a href="#">Что-то важное</a>
+					</span>
+					<span class="mShort">
+						This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+					</span>
+					<span class="mDate">
+						22.01
+					</span>
+					<span class="fileIco">
+						<img src="img/elem/fileIco.png" alt="">
+					</span>
+				</li>
+				<li class="">
+					<div class="mCheck">
+						<div class="checkbox-holder">
+				            <span><input class="checkBox" type="checkbox" name="visibleall"/></span>
+				        </div>
+					</div>
+					<div class="avatar">
+						<div class="avatar-image size-20"><img src="img/content/avatar.jpg" alt=""></div>
+					</div>
+					<span class="mTheme">
+						<a href="#">Ещё одна какая-то тема</a>
+					</span>
+					<span class="mShort">
+						Morbi accumsan ipsum velit. Nam nec tellus a odio tinciduntThis is Photoshop's version  of Lorem Ipsum
+					</span>
+					<span class="mDate">
+						22.01
+					</span>
+					<span class="fileIco"></span>
+				</li>
+				<li class="">
+					<div class="mCheck">
+						<div class="checkbox-holder">
+				            <span><input class="checkBox" type="checkbox" name="visibleall"/></span>
+				        </div>
+					</div>
+					<div class="avatar">
+						<div class="avatar-image size-20"><img src="img/content/avatar.jpg" alt=""></div>
+					</div>
+					<span class="mTheme">
+						<a href="#">Тема сообщения</a>
+					</span>
+					<span class="mShort">
+						Привет. Написал Тебе это все еще в понедельник, но увы, только сейчас получается отправить..
+					</span>
+					<span class="mDate">
+						22.01
+					</span>
+					<span class="fileIco">
+						<img src="img/elem/fileIco.png" alt="">
+					</span>
+				</li>
+				<li class="">
+					<div class="mCheck">
+						<div class="checkbox-holder">
+				            <span><input class="checkBox" type="checkbox" name="visibleall"/></span>
+				        </div>
+					</div>
+					<div class="avatar">
+						<div class="avatar-image size-20"><img src="img/content/avatar.jpg" alt=""></div>
+					</div>
+					<span class="mTheme">
+						<a href="#">Что-то важное</a>
+					</span>
+					<span class="mShort">
+						This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+					</span>
+					<span class="mDate">
+						22.01
+					</span>
+					<span class="fileIco">
+						<img src="img/elem/fileIco.png" alt="">
+					</span>
+				</li>
+				<li class="">
+					<div class="mCheck">
+						<div class="checkbox-holder">
+				            <span><input class="checkBox" type="checkbox" name="visibleall"/></span>
+				        </div>
+					</div>
+					<div class="avatar">
+						<div class="avatar-image size-20"><img src="img/content/avatar.jpg" alt=""></div>
+					</div>
+					<span class="mTheme">
+						<a href="#">Ещё одна какая-то тема</a>
+					</span>
+					<span class="mShort">
+						Morbi accumsan ipsum velit. Nam nec tellus a odio tinciduntThis is Photoshop's version  of Lorem Ipsum
+					</span>
+					<span class="mDate">
+						22.01
+					</span>
+					<span class="fileIco"></span>
+				</li>
+				<li class="">
+					<div class="mCheck">
+						<div class="checkbox-holder">
+				            <span><input class="checkBox" type="checkbox" name="visibleall"/></span>
+				        </div>
+					</div>
+					<div class="avatar">
+						<div class="avatar-image size-20"><img src="img/content/avatar.jpg" alt=""></div>
+					</div>
+					<span class="mTheme">
+						<a href="#">Тема сообщения</a>
+					</span>
+					<span class="mShort">
+						Привет. Написал Тебе это все еще в понедельник, но увы, только сейчас получается отправить..
+					</span>
+					<span class="mDate">
+						22.01
+					</span>
+					<span class="fileIco">
+						<img src="img/elem/fileIco.png" alt="">
+					</span>
+				</li>
+				<li class="">
+					<div class="mCheck">
+						<div class="checkbox-holder">
+				            <span><input class="checkBox" type="checkbox" name="visibleall"/></span>
+				        </div>
+					</div>
+					<div class="avatar">
+						<div class="avatar-image size-20"><img src="img/content/avatar.jpg" alt=""></div>
+					</div>
+					<span class="mTheme">
+						<a href="#">Что-то важное</a>
+					</span>
+					<span class="mShort">
+						This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+					</span>
+					<span class="mDate">
+						22.01
+					</span>
+					<span class="fileIco">
+						<img src="img/elem/fileIco.png" alt="">
+					</span>
+				</li>
+				<li class="">
+					<div class="mCheck">
+						<div class="checkbox-holder">
+				            <span><input class="checkBox" type="checkbox" name="visibleall"/></span>
+				        </div>
+					</div>
+					<div class="avatar">
+						<div class="avatar-image size-20"><img src="img/content/avatar.jpg" alt=""></div>
+					</div>
+					<span class="mTheme">
+						<a href="#">Ещё одна какая-то тема</a>
+					</span>
+					<span class="mShort">
+						Morbi accumsan ipsum velit. Nam nec tellus a odio tinciduntThis is Photoshop's version  of Lorem Ipsum
+					</span>
+					<span class="mDate">
+						22.01
+					</span>
+					<span class="fileIco"></span>
+				</li>
+				<li class="">
+					<div class="mCheck">
+						<div class="checkbox-holder">
+				            <span><input class="checkBox" type="checkbox" name="visibleall"/></span>
+				        </div>
+					</div>
+					<div class="avatar">
+						<div class="avatar-image size-20"><img src="img/content/avatar.jpg" alt=""></div>
+					</div>
+					<span class="mTheme">
+						<a href="#">Тема сообщения</a>
+					</span>
+					<span class="mShort">
+						Привет. Написал Тебе это все еще в понедельник, но увы, только сейчас получается отправить..
+					</span>
+					<span class="mDate">
+						22.01
+					</span>
+					<span class="fileIco">
+						<img src="img/elem/fileIco.png" alt="">
+					</span>
+				</li>
+				<li class="">
+					<div class="mCheck">
+						<div class="checkbox-holder">
+				            <span><input class="checkBox" type="checkbox" name="visibleall"/></span>
+				        </div>
+					</div>
+					<div class="avatar">
+						<div class="avatar-image size-20"><img src="img/content/avatar.jpg" alt=""></div>
+					</div>
+					<span class="mTheme">
+						<a href="#">Что-то важное</a>
+					</span>
+					<span class="mShort">
+						This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+					</span>
+					<span class="mDate">
+						22.01
+					</span>
+					<span class="fileIco">
+						<img src="img/elem/fileIco.png" alt="">
+					</span>
+				</li>
+				<li class="">
+					<div class="mCheck">
+						<div class="checkbox-holder">
+				            <span><input class="checkBox" type="checkbox" name="visibleall"/></span>
+				        </div>
+					</div>
+					<div class="avatar">
+						<div class="avatar-image size-20"><img src="img/content/avatar.jpg" alt=""></div>
+					</div>
+					<span class="mTheme">
+						<a href="#">Ещё одна какая-то тема</a>
+					</span>
+					<span class="mShort">
+						Morbi accumsan ipsum velit. Nam nec tellus a odio tinciduntThis is Photoshop's version  of Lorem Ipsum
+					</span>
+					<span class="mDate">
+						22.01
+					</span>
+					<span class="fileIco"></span>
+				</li>
+				<li class="">
+					<div class="mCheck">
+						<div class="checkbox-holder">
+				            <span><input class="checkBox" type="checkbox" name="visibleall"/></span>
+				        </div>
+					</div>
+					<div class="avatar">
+						<div class="avatar-image size-20"><img src="img/content/avatar.jpg" alt=""></div>
+					</div>
+					<span class="mTheme">
+						<a href="#">Тема сообщения</a>
+					</span>
+					<span class="mShort">
+						Привет. Написал Тебе это все еще в понедельник, но увы, только сейчас получается отправить..
+					</span>
+					<span class="mDate">
+						22.01
+					</span>
+					<span class="fileIco">
+						<img src="img/elem/fileIco.png" alt="">
+					</span>
+				</li>
+				<li class="">
+					<div class="mCheck">
+						<div class="checkbox-holder">
+				            <span><input class="checkBox" type="checkbox" name="visibleall"/></span>
+				        </div>
+					</div>
+					<div class="avatar">
+						<div class="avatar-image size-20"><img src="img/content/avatar.jpg" alt=""></div>
+					</div>
+					<span class="mTheme">
+						<a href="#">Что-то важное</a>
+					</span>
+					<span class="mShort">
+						This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+					</span>
+					<span class="mDate">
+						22.01
+					</span>
+					<span class="fileIco">
+						<img src="img/elem/fileIco.png" alt="">
+					</span>
+				</li>
+				<li class="">
+					<div class="mCheck">
+						<div class="checkbox-holder">
+				            <span><input class="checkBox" type="checkbox" name="visibleall"/></span>
+				        </div>
+					</div>
+					<div class="avatar">
+						<div class="avatar-image size-20"><img src="img/content/avatar.jpg" alt=""></div>
+					</div>
+					<span class="mTheme">
+						<a href="#">Ещё одна какая-то тема</a>
+					</span>
+					<span class="mShort">
+						Morbi accumsan ipsum velit. Nam nec tellus a odio tinciduntThis is Photoshop's version  of Lorem Ipsum
+					</span>
+					<span class="mDate">
+						22.01
+					</span>
+					<span class="fileIco"></span>
+					
+				</li>
+			</ul>
+			<div class="blockRow">
+				<strong>Операции с выбранными:</strong>
+				<div class="buttonHolder">
+	                <a href="#">Отменить как прочитанное</a>
+	            </div>
+          		<div class="buttonHolder">
+	                <a href="#">Отменить как не прочитанное</a>
+	            </div>
+          		<div class="listDiskSpace-button">
+					<a href="#">Удалить</a>
+				</div>
+			</div>
+		</div>
+	  </div>	
+	</div><!-- #content-->
+
+</div><!-- #wrapper -->
+
+<div id="footer">
+  <div class="row-fluid">
+    <div class="span3">
+      <a href="#" class="bottom-logo"><img src="img/elem/logo.png" alt=""></a>
+      <ul class="social-buttons">
+        <li><a href="#"><img src="img/icons/facebook-ico.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/google-ico.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/link-ico.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/mail-co.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/ok-ico.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/vk-ico.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/yandex-ico.png" alt=""></a></li>
+      </ul>
+      <p class="copyright">
+        © 2013 Все права защищены
+      </p>
+    </div>
+    <div class="span3">
+      <ul class="bottom-nav">
+        <li class="main-link"><a href="#">О сервисе</a></li>
+        <li><a href="#">О Блокноте</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Условия договора</a></li>
+        <li><a href="#">Политика конфиденциальности</a></li>
+        <li><a href="#">Разработчики сервиса</a></li>
+      </ul>
+    </div>
+    <div class="span3">
+      <ul class="bottom-nav">
+        <li class="main-link"><a href="#">Блокнот пользователя</a></li>
+        <li><a href="#">Записи</a></li>
+        <li><a href="#">Сообщения</a><span class="number">+18</span></li>
+        <li><a href="#">Места</a></li>
+        <li><a href="#">Настройки</a></li>
+        <li><a href="#">Выход</a></li>
+      </ul>
+    </div>
+    <div class="span3">
+      <a href="#" class="to-top-link">Поднять</a>
+      <p>Использовано дискового пространства:<br>93 Mb из 100 Mb (93%)</p>
+    </div>
+  </div>
+</div><!-- #footer -->
+
+</body>
+</html>

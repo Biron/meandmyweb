@@ -1,0 +1,142 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+}
+body {
+	font: 12px/18px Arial, Tahoma, Verdana, sans-serif;
+	width: 100%;
+	height: 100%;
+	background: url("../images/bg.jpg") repeat scroll 0 0 transparent;
+	color: #FFEDED;
+	}
+a {
+	color: #3EB4F2;
+	outline: none;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+p {
+	margin: 0 0 8px
+}
+img {
+	border: none;
+}
+input {
+	vertical-align: middle;
+}
+#wrapper {
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	background: url("../images/fon_light1.png") no-repeat scroll center top transparent;
+}
+h2{
+		color: #3EB4F2;
+		font-size: 24px;
+		margin: 0 0 10px 10px;
+		text-shadow: 1px 1px 1px #FFFFFF, -1px -1px 0 #000000;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+	height: 150px;
+	width: 980px;
+	margin: 0 auto;
+	border-bottom: 2px dashed #3eb4f2;
+	overflow: hidden;
+}
+#logo{
+	margin: 40px 0 0;
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+#content {
+	padding: 0 0 72px;
+	overflow: hidden;
+	width: 1024px;
+	margin: 0 auto;
+}
+#inner{
+		overflow: hidden;
+}
+#middle{
+	float:left;
+	width: 700px;
+    margin: 20px 0 -2000px;
+    padding: 0 20px 2000px;
+}
+	.block{
+		width: 320px;
+		background: url("../images/block_bg.png") repeat 0 0 scroll transparent;
+		padding: 10px 10px 20px;
+		margin: 0 0 20px;
+		float: left;
+		min-height: 310px;
+		position: relative;
+	}
+		.block a.url_h{
+			bottom: 10px;
+			left: 10px;
+			position: absolute;
+		}
+		.block:nth-child(even){
+			margin-left: 20px;
+		}
+		.block img{
+			margin-bottom: 10px;
+		}
+	.notend{
+	   color: #3EB4F2;
+		float: left;
+		font-size: 28px;
+		margin: 20px 0;
+		text-shadow: 1px 1px 1px #FFFFFF, -1px -1px 0 #000000;
+	}
+	
+
+/* Right
+-----------------------------------------------------------------------------*/
+#right{
+	float: left;
+	width: 262px;
+	border-left: 2px dashed #3eb4f2;
+    margin: 20px 0 -2000px;
+    padding: 0 0 2000px;
+	height: 1500px;
+}
+	#fixed {
+		padding: 0px;
+	}
+		#fixed .cert a{
+			display: block;
+			float:left;
+			margin-bottom: 10px;
+			margin-left: 10px;
+		}
+	.contacts{
+		margin: 0 0 20px;
+	}
+		.contacts li{
+			list-style: none;
+			font-size: 14px;
+			margin: 0  0 0 10px;
+		}
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+#footer {
+	width: 1024px;
+	margin: -52px auto 0;
+	height: 50px;
+	border-top: 2px dashed #3eb4f2;
+	position: relative;
+}

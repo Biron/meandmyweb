@@ -1,0 +1,218 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+}
+body {
+	font: 14px/1.2 Tahoma, Verdana, sans-serif;
+	width: 100%;
+	height: 100%;
+    background: #fefefe;
+	color: #4b4b4b;
+}
+a {
+	color: blue;
+	outline: none;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline ;
+}
+p {
+	margin: 0 0 18px
+}
+img {
+	border: none;
+}
+input {
+	vertical-align: middle;
+}
+#wrapper {
+	width: 1280px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: normal;
+    margin: 20px 0;
+	color: #000;
+}
+h3{
+    font-size: 18px;
+    font-weight: normal;
+    margin: 10px 0
+}
+
+.green{
+    color: #659000;
+}
+.red{
+    color: #dc161e;
+}
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+	height: 447px;
+	background: url("../images/header.jpg") no-repeat 0 0 scroll;
+    overflow: hidden;
+}
+    .header_text{
+        color: #241e0a;
+        float: left;
+        margin: 65px 0 0 520px;
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+        .header_text .dashed{
+            border-bottom: 0.1em dashed #dc161e;
+            font-size: 24px;
+            margin: 0 0 0 50px;
+        }
+        .header_text .dashed:hover{
+            border: none;
+            text-decoration: none;
+        }
+    .left{
+        float:left;
+        width: 272px;
+        margin: 0 0 0 1px;
+        background: url("../images/menu_line.png") repeat-y 0 0 scroll;
+    }
+        #logo{
+            height: 186px;
+        }
+        #menu{
+            width:263px;
+        }
+            #menu li{
+                list-style: inside none;
+                background: url("../images/menu_bg.png");
+                border-right: 1px solid #fff; 
+                height: 38px;
+                               
+            }
+                #menu li a{
+                    background: url("../images/menu_line.png") repeat-x left bottom scroll;
+                    display: block;
+                    padding: 7px 20px 7px 50px;
+                    width: 192px;
+                    font-size:  16px;
+                    color: #fff;
+                    text-shadow: black 1px 1px 2px;
+                }
+    
+/* Middle
+-----------------------------------------------------------------------------*/
+#content {
+
+}
+    .main{
+        width: 976px;
+        margin: 0 auto 0;
+        overflow: hidden;
+       	padding: 0 152px;
+    }   
+        .block{
+            float: left;
+            width: 450px;
+            margin: 0 0 0 20px;
+
+        }
+			.block p.text{
+				font-size: 12px;
+				color: #666;
+				float: left;
+				line-height: 1.6;
+				margin-top: 10px;
+				width: 279px;
+			}
+            .block:first-child{
+                margin: 0;
+            }
+        
+            .block div.img{
+                width: 150px;
+                text-align: center;
+                float: left; 
+                margin: 0 10px 10px 0;
+            }
+    .sub{
+   	    width: 976px;
+        margin: 0 auto 0;
+        overflow: hidden;
+       	padding: 0 152px 107px;
+        background: url("../images/footer.jpg") repeat left top scroll;
+    }
+        a.price_down{
+            color: #659000;
+            font-size: 16px;
+            background: url("../images/download.jpg") no-repeat left top scroll;
+            display: block;
+            float: right;
+			margin-right: 80px;
+            padding: 3px 0 3px 20px;
+        }
+
+	#carousel{
+		clear: both;
+		margin: 20px 0;
+		float: left;
+	}
+		#jcarousel li{
+			text-align: center;
+		}
+			#jcarousel li a{
+				font-size: 12px;
+			}
+			.prod_img{
+				position: relative;
+				width: 142px;
+				height: 142px;
+				border-radius: 10px;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				behavior: url("PIE.htc");
+				border: 1px solid #d8d8d8;
+				overflow: hidden;
+			}
+/* Footer
+-----------------------------------------------------------------------------*/
+#footer {
+	width: 976px;
+	margin: -107px auto 0;
+	height: 107px;
+	background: url("../images/down_bg.png") repeat left top scroll;
+	position: relative;
+    padding: 0 152px;
+    color: #909090;
+}
+
+#footer a{
+    color: #dc161e;
+}
+#footer .footer_block{
+    float: left;
+    line-height: 93px;
+    width: 285px;
+}
+#footer .footer_block.center{ 
+    padding-left: 100px;
+    padding-top: 20px;
+    width: 300px;
+    line-height: 1.2;
+    }
+#footer .footer_block.center img{
+    float:left;
+    margin: 0 10px 0 0;
+}
+p.foot_tel{
+    margin: 10px 0 0;
+}
+#footer .footer_block.right{ text-align: right;}

@@ -1,0 +1,41 @@
+a{
+	color: #079687;
+ }
+
+.breadcums{
+	color: #079687;
+ }
+ 
+.categories h2,
+.categories h3,
+.categories a{
+	color: #079687;
+}
+
+.categories .readmore{
+	background: url("../../img/elem/readmore-button-lblue.png") no-repeat scroll 0 0 transparent;
+}
+.article-holder h2{
+	color: #079687;
+
+}
+
+.sub-page-nav{
+	background-color: #103449;
+	background-image: -webkit-linear-gradient(left, #103449, #184c6c);
+	background-image: -moz-linear-gradient(left, #103449, #184c6c);
+	background-image: -o-linear-gradient(left, #103449, #184c6c);
+	background-image: -ms-linear-gradient(left, #103449, #184c6c);
+	background-image: linear-gradient(left, #103449, #184c6c);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#103449', endColorstr='#184c6c',GradientType=1 );
+}
+	
+	.sub-page-nav ul li:hover,
+	.sub-page-nav ul li.current{
+		background: url("../../img/elem/sub-nav-arrow-lblue.png") no-repeat scroll right center transparent;
+		padding-right: 8px;
+		margin-right: -8px;
+	}
+		.sub-page-nav ul li a{
+			border-bottom: 1px solid #11354b;
+		}

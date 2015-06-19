@@ -1,0 +1,497 @@
+@charset "utf-8";
+@import "reset.css";
+
+html {
+	height: 100%;
+}
+body {
+	font: 12px/18px Arial, Tahoma, Verdana, sans-serif;
+	height: 100%;
+    background: #1b1a19;
+}
+a {
+	color: blue;
+	outline: none;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+p {
+	margin: 0 0 18px
+}
+img {
+	border: none;
+}
+input {
+	vertical-align: middle;
+}
+#wrapper {
+	width: 1280px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.body_in{
+    background: #f5f6f7;
+    overflow: hidden;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+	height: 600px;
+	text-align: center;
+}
+#header_in {
+	height: 160px;
+    background: url("../images/header_in.png") no-repeat scroll left top transparent;
+}
+#logo{
+    position: relative;
+    margin-left: 230px;
+     margin-top:50px;
+     float:left;
+}
+#head_contacts  {  
+    position: relative;
+    margin-right: 285px;
+    margin-top:45px;
+    float:right;
+    text-align: right;
+    color: #414141;
+    font-size: 14px;
+        font-weight: bold;
+}
+p.head_tel{
+    color: #00a544;
+    font-size: 20px;
+    font-weight: bold;
+}
+span.code{
+      font-size: 16px;  
+}
+.head_right{
+    position: absolute;
+    width: 305px;
+    height: 414px;
+    top:0px;
+    right: 0px;
+    background: url("../images/header_in_right.png") no-repeat scroll right top transparent;
+     z-index: 1;
+}
+/* Menu
+-----------------------------------------------------------------------------*/
+#menu{
+    width:100%;
+    height: 35px;
+    background: url("../images/menu_bg.png") repeat-x scroll 0 0 transparent;
+}
+
+#menu ul.top_menu{
+    width:100%;
+    height: 35px;
+    background: url("../images/menu_bg_center.png") no-repeat scroll center top transparent;
+    list-style: inside none;
+}
+
+#menu ul.top_menu li{
+    background: url("../images/li_sep.jpg") no-repeat scroll left center transparent;
+    float: left;
+    height: 35px;
+    position: relative;
+    text-align: left;
+}
+#menu ul.top_menu li:first-child{
+    background: none;
+    padding-left: 0;
+}
+#menu ul.top_menu li a{
+    display: block;
+    height: 100%;
+    padding: 9px 60px 0;
+    position:relative;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+#menu ul.top_menu li a:hover{
+    background: url("../images/menu_hov.png") no-repeat scroll top center transparent;
+}
+
+#menu ul.top_menu li ul{
+    list-style: inside none;
+    left: 0;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    width: 226px;
+    padding-bottom: 10px;
+    background: url("../images/down_menu_bg.png") repeat-y scroll top center transparent;
+}
+#menu ul.top_menu li .ul_end{
+    background: url("../images/down_menu_bot_sh.png") no-repeat scroll center bottom transparent;
+    bottom: -27px;
+    height: 27px;
+    left: -6px;
+    position: absolute;
+    width: 231px;
+}
+#menu ul.top_menu li ul li,#menu ul.top_menu li ul li:first-child{
+    width: 226px;
+    text-align: center;
+    background: url("../images/down_menu_li.png") no-repeat scroll bottom center transparent;
+    
+}
+#menu ul.top_menu li ul li a{
+    color: #ababab;
+    font-size: 12px;
+}
+
+
+/* Menu
+-----------------------------------------------------------------------------*/
+#menu_in{
+    width:100%;
+    height: 28px;
+    background: url("../images/menu_in.png") repeat-x scroll 0 0 transparent;
+    position: relative;
+    z-index: 20;
+}
+
+#menu_in ul.top_menu{
+    width:100%;
+    height: 28px;
+    background: url("../images/menu_in_center.png") no-repeat scroll center top transparent;
+    list-style: inside none;
+}
+
+#menu_in ul.top_menu li{
+    background: url("../images/li_sep.jpg") no-repeat scroll left center transparent;
+    float: left;
+    height: 28px;
+    position: relative;
+    text-align: left;
+}
+#menu_in ul.top_menu li:first-child{
+    background: none;
+    padding-left: 0;
+}
+#menu_in ul.top_menu li a{
+    display: block;
+    height: 100%;
+    padding: 5px 60px 0;
+    position:relative;
+    color: #474747;
+    font-size: 16px;
+    text-decoration: none;
+}
+#menu_in ul.top_menu li a:hover{
+    background: url("../images/menu_hov.png") no-repeat scroll top center transparent;
+}
+
+#menu_in ul.top_menu li ul{
+    list-style: inside none;
+    left: -14px !important;
+    top: 28px !important;
+    position: absolute;
+    z-index: 1000;
+    width: 226px;
+    padding-bottom: 10px;
+    background: url("../images/down_menu_in.png") repeat-y scroll top center transparent;
+}
+#menu_in ul.top_menu li .ul_end{
+    background: url("../images/down_menu_bot_sh.png") no-repeat scroll center bottom transparent;
+    bottom: -27px;
+    height: 27px;
+    left: -6px;
+    position: absolute;
+    width: 231px;
+}
+#menu_in ul.top_menu li ul li,#menu_in ul.top_menu li ul li:first-child{
+    width: 226px;
+    text-align: center;
+    background: url("../images/down_menu_li.png") no-repeat scroll bottom center transparent;
+    
+}
+#menu_in ul.top_menu li ul li a{
+    color: #474747;
+    font-size: 12px;
+}
+
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+#content_in{
+    position: relative;
+    z-index: 2;
+    color: #4f4c4a;
+    font-size: 14px;
+    padding-top: 20px;
+    width:75%;
+    margin: 0 auto;
+}
+
+.article{
+    width:960px;
+    height: 182px;
+    padding: 10px;
+    background: url("../images/art_bg.png") no-repeat scroll 0 0 transparent;
+    color: #4f4c4a;
+    font-size: 14px;
+    overflow: hidden;
+}
+.article img{
+    float: left;
+    margin: 0 10px 0 0;
+}
+h2.art_title{
+    color: #00a544;
+    font-size: 18px;
+    font-weight: bold;
+}
+.img_blocks{
+    margin: 0 auto;
+    padding: 0 50px;
+    width: 1180px;  
+    margin-top: 20px;
+    float: left;
+    clear: both;
+}
+.img_blocks .block{
+    width: 328px;
+    position:relative;
+    float:left;
+    overflow: hidden;
+    height: 221px;
+    margin-left: 80px;
+}
+.img_blocks .block:first-child{
+    margin-left: 0px;   
+}
+.text_blocks{ 
+    clear: both;
+    float: left;
+    margin: 0 auto;
+    padding: 0 50px;
+    width: 1180px;  
+    margin-top: 20px;
+    color: #b7b7b7;
+    font-size: 14px;
+}
+
+.text_blocks .block{
+    width: 350px;
+    position:relative;
+    float:left;
+    margin-left: 50px;
+}
+.text_blocks .block:first-child{
+    margin-left: 0px;   
+}
+.text_blocks .block img{
+    float:left;
+    margin: 0 10px -30px 0;
+}
+.text_blocks .block h2.title{
+    color: #00A43E;
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 15px;
+    font-weight: normal;  
+}
+.text_blocks .block p{
+    clear:both;
+
+}
+#container {
+    padding: 0 50px 30px;
+    width: 1180px;
+    margin:20px auto 0 auto;
+    float: left;
+    height: 170px !important;
+    overflow: hidden;
+}
+#container h3{
+    color: #00a43e;
+    font-size: 18px;
+    padding-bottom: 10px;
+    font-weight: normal;  
+    border-bottom: 1px solid #535252;  
+    width:215px;
+}
+#container h4{
+    color: #cfcfcf;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+#container .date{
+    color: #6f6f6f;
+    font-size: 12px;
+    float: left;
+    margin-right: 15px;
+}
+
+a.more{
+    background: url("../images/readmore.png") no-repeat scroll top left transparent;
+    padding: 1px;   
+    color: #ffffff;
+    text-decoration: none; 
+    padding: 8px 25px 7px 26px;
+}
+
+
+.nav{
+    float: right;
+    width: 20px;
+    height: 170px;
+    position: relative;
+}
+
+
+#prev, #next{
+    color: #FFFFFF;
+    display: block;
+    height: 16px;
+    text-align: center;
+    text-decoration: none;
+    width: 16px
+}
+
+#prev{
+    background: url("../images/down.png") no-repeat scroll bottom center transparent;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    
+}
+#prev:hover{
+    background: url("../images/down_hov.png") no-repeat scroll bottom center transparent;    
+}
+#next{
+    background: url("../images/up.png") no-repeat scroll top center transparent;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+#next:hover{
+    background: url("../images/up_hov.png") no-repeat scroll top center transparent;   
+}
+#content .contbox{
+    padding:10px 0;
+    color: #cfcfcf;
+
+}
+.block .captionbox{
+    cursor: pointer;
+    font-size: 12px;
+    height: 43px;
+    left: 3px;
+    padding: 45px 10px 0;
+    position: absolute;
+    text-align: right;
+    top: 130px;
+    width: 302px;
+}
+.block .captionbox p{
+    color: #fff;
+    font-size: 14px;
+    margin: 0px;
+}
+.block .captionbox{
+    background: rgb(255, 255, 255); /* Для тех, кто не поддерживает данное свойство будет сплошной фоновый цвет*/
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.block .captionbox p .price{
+color: #00c232;
+font-size: 18px;}
+/* Footer
+-----------------------------------------------------------------------------*/
+#footer {
+    background: url("../images/foot_bg.png") repeat-x scroll left bottom transparent;
+    clear: both;
+    color: #FFFFFF;
+    float: none;
+    font-size: 12px;
+    height: 93px;
+    margin: 20px auto 0;
+    width: 1280px;
+}
+.foot_line{
+    width: 100%;
+    height: 3px;
+    background: url("../images/foot_line.png") repeat-x scroll bottom left transparent;
+}
+#footer a{
+    text-decoration: none;
+    color: #fff;
+}
+#footer .footer_block{
+    float: left;
+    line-height: 93px;
+    width: 400px;
+}
+#footer .footer_block.center{ 
+    padding-left: 100px;
+    padding-top: 20px;
+    width: 350px;
+    line-height: 1.2;
+    }
+#footer .footer_block.center img{
+    float:left;
+    margin: 0 10px 0 0;
+}
+p.foot_tel{
+    margin: 10px 0 0;
+}
+#footer .footer_block.right{ text-align: right;}
+
+
+
+
+
+.body_in #footer {
+    background: url("../images/foot_in.png") repeat-x scroll left bottom transparent;
+    clear: both;
+    color: #414141;
+    float: none;
+    font-size: 12px;
+    height: 90px;
+    margin: 20px auto 0;
+    width: 1280px;
+}
+
+.body_in #footer a{
+    text-decoration: none;
+    color: #414141;
+}
+.body_in .foot_line{
+    display:none;
+}
+.body_in #footer .footer_block{
+    float: left;
+    line-height: 93px;
+    width: 400px;
+}
+.body_in #footer .footer_block.center{ 
+    padding-left: 100px;
+    padding-top: 20px;
+    width: 350px;
+    line-height: 1.2;
+    }
+.body_in #footer .footer_block.center img{
+    float:left;
+    margin: 0 10px 0 0;
+}
+p.foot_tel{
+    margin: 10px 0 0;
+}
+.body_in #footer .footer_block.right{ text-align: right;}
+
+
+

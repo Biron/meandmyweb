@@ -1,0 +1,22 @@
+* html #wrapper,
+* html #footer {
+	width: expression((documentElement.clientWidth||document.body.clientWidth)<1024?'1024px':'');
+}
+#wrapper{
+        filter:
+        progid:DXImageTransform.Microsoft.Shadow(color='#222222', Direction=45, Strength=4)
+        progid:DXImageTransform.Microsoft.Shadow(color='#222222', Direction=135, Strength=6)
+        progid:DXImageTransform.Microsoft.Shadow(color='#222222', Direction=225, Strength=6)
+        progid:DXImageTransform.Microsoft.Shadow(color='#222222', Direction=315, Strength=4);
+        position: relative;
+        top: -12px;
+        left: -12px;
+        zoom: 1;
+    }
+.all_block{
+        padding: 25px 5px 5px 25px;
+    }
+    
+    #bg {
+        padding: 25px 5px 5px 25px;
+    }

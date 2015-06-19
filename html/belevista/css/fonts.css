@@ -1,0 +1,53 @@
+/*@font-face {
+    font-family: 'helveticaneueltstd-md';
+    src: url('fonts/helveticaneueltstd-md-webfont.eot');
+    src: url('fonts/helveticaneueltstd-md-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/helveticaneueltstd-md-webfont.woff') format('woff'),
+         url('fonts/helveticaneueltstd-md-webfont.ttf') format('truetype'),
+         url('fonts/helveticaneueltstd-md-webfont.svg#reklamescript-regular_demo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+@font-face {
+	font-family: 'futura';
+	src: url('fonts/futura.eot');
+    src: url('fonts/futura.eot?#iefix') format('embedded-opentype'),
+         url('fonts/futura.woff') format('woff'),
+         url('fonts/futura.ttf') format('truetype'),
+         url('fonts/futura.svg#reklamescript-regular_demo') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'FuturaLight_Light';
+    src: url('fonts/FuturaLight_Light.eot');
+    src: url('fonts/FuturaLight_Light.eot?#iefix') format('embedded-opentype'),
+         url('fonts/FuturaLight_Light.woff') format('woff'),
+         url('fonts/FuturaLight_Light.ttf') format('truetype'),
+         url('fonts/FuturaLight_Light.svg#reklamescript-regular_demo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'goudos';
+    src: url('fonts/GOUDOS.eot');
+    src: url('fonts/GOUDOS.eot?#iefix') format('embedded-opentype'),
+         url('fonts/GOUDOS.woff') format('woff'),
+         url('fonts/GOUDOS.TTF') format('truetype'),
+         url('fonts/GOUDOS.svg#reklamescript-regular_demo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyriadPro';
+    src: url('fonts/MyriadPro-Regular.eot');
+    src: url('fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/MyriadPro-Regular.woff') format('woff'),
+         url('fonts/MyriadPro-Regular.ttf') format('truetype'),
+         url('fonts/MyriadPro-Regular.svg#reklamescript-regular_demo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

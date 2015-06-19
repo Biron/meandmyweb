@@ -1,0 +1,108 @@
+.jcarousel-container {background-color: transparent;}
+.jcarousel-direction-rtl {direction: rtl;}
+.jcarousel-container-horizontal{
+    width:1160px;
+    padding:0;
+	margin:0 auto;
+}
+.jcarousel-clip-horizontal {
+    width:1160px;
+    padding:0;
+}
+
+
+.jcarousel-clip-vertical {
+	height: 150px;
+    width: 100%;
+}
+
+
+.jcarousel-item {
+    width:1175px;
+    padding:12px 10px;
+	margin:0 50px;
+}
+.jcarousel-item-vertical {
+    margin-bottom: 10px;
+}
+
+
+.jcarousel-direction-rtl .jcarousel-item-horizontal {margin: 0px auto;}
+/*  Horizontal Buttons */
+.jcarousel-next-horizontal {
+    position: absolute;
+	top:50%;
+	right:-50px;
+	width: 55px;
+    height: 105px;
+    cursor: pointer;
+	margin-top:-52px;
+    background: transparent url(arrows.png) no-repeat -55px 0;
+}
+.jcarousel-prev-horizontal{
+    cursor: pointer;
+	position:absolute;
+	top:50%;
+	left:-55px;
+	width: 55px;
+    height: 105px;
+    background: transparent url(arrows.png) no-repeat 0 0;
+	margin-top:-52px;
+}
+
+/**
+ *  Vertical Buttons
+ */
+.jcarousel-next-vertical {
+    position: absolute;
+    bottom: -15px;
+    right: 43px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+background: url("down.png") no-repeat scroll bottom center transparent;
+}
+
+.jcarousel-next-vertical:hover,
+.jcarousel-next-vertical:focus {
+    background: url("down_hov.png") no-repeat scroll bottom center transparent;
+}
+
+.jcarousel-next-vertical:active {
+    background: url("down_hov.png") no-repeat scroll bottom center transparent;
+}
+
+.jcarousel-next-disabled-vertical,
+.jcarousel-next-disabled-vertical:hover,
+.jcarousel-next-disabled-vertical:focus,
+.jcarousel-next-disabled-vertical:active {
+    cursor: default;
+    background-position: 0 -96px;
+}
+
+.jcarousel-prev-vertical {
+    position: absolute;
+    top: -15px;
+    right: 43px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background: url("up.png") no-repeat scroll top center transparent;
+}
+
+.jcarousel-prev-vertical:hover,
+.jcarousel-prev-vertical:focus {
+    background: url("up_hov.png") no-repeat scroll top center transparent;   
+}
+
+.jcarousel-prev-vertical:active {
+    background: url("up_hov.png") no-repeat scroll top center transparent; 
+}
+
+.jcarousel-prev-disabled-vertical,
+.jcarousel-prev-disabled-vertical:hover,
+.jcarousel-prev-disabled-vertical:focus,
+.jcarousel-prev-disabled-vertical:active {
+    cursor: default;
+    background-position: 0 -96px;
+}

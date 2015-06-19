@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Блокнот | Группы | Расширенный вид </title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/audioplayer.css">
+  <link href="css/ui-lightness/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+  
+
+  <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery.selectbox.min.js"></script>
+  <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+  <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  
+  <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/ie.css">
+  <![endif]-->
+  <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="css/ie7.css">
+  <![endif]-->
+</head>
+
+<body>
+<div id="wrapper">
+
+	<div id="header">
+    <div class="bottom-line"></div>
+    <div class="row-fluid">
+      <div class="span3">
+        <div class="logo"><a href="#"><img src="img/elem/logo.png" alt=""></a></div>
+      </div>
+      <div class="span9">
+        <div class="main-navigation logged-in">
+          <ul>
+            <li class="my-note current"><a href="#">Мой блокнот</a></li>
+            <li class="filter"><a href="#">Фильтры</a></li>
+            <li class="search"><a href="#">Поиск</a></li>
+            <li class="news"><a href="#">Уведомления<span class="news-numder">3</span></a></li>
+          </ul>
+        </div>        
+    
+        <div class="control-panel logged-in">
+          <ul>
+            <li class="location"><a href="#">Санкт-Петербург</a></li>
+            <li class="navigation-add-button"><a href="#">Добавить</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+	</div><!-- #header-->
+	<div id="content">
+	<!-- BEGIN SLIDE PANEL-->
+		
+		<div id="slide-panel" class="closed" >
+			<div class="when-closed">
+				<ul class="slide-panel-navigation">
+					<li class="rating"><a href="#">873</a></li>
+					<li class="subscribers"><a href="#">198</a></li>
+					<li class="share"><a href="#">9321</a></li>
+					<li class="comments"><a href="#">5674</a></li>
+				</ul>
+			</div>
+
+			<div class="when-opened clearfix">
+				<div class="articleTitle clearfix hide-on-half" >
+					<h2><img src="img/icons/sleepIcon.png" alt="">Заголовок записи вроде как длинный, но при этом не так чтобы очень огромный, как бывает иногда</h2>
+					<div class="ageMark">18+</div>
+				</div>
+				<ul class="slide-panel-controls">
+					<li class="rating">
+						<h3>Рейтинг записи: Очень высокий</h3>
+						<div class="rowBox">
+						  <a class="rowBoxminus" href="#">Минус</a>	
+						  <p>873</p>
+						  <a class="rowBoxPlus" href="#">Плюс</a>					  
+						</div>
+						<span class="nextonhalf"><a href="#">Венглинский Д.</a>, <a href="#">Орлов Ю.</a>, <a href="#">Антонов Г.</a>, и другие проголосовали за эту запись <a href="#">См. всех</a></span>
+					</li>
+					<li class="subscribers">
+						<h3>Подписались на запись: Много (9643)</h3>
+						<div class="starSignHolder true">
+							<div class="starSign"></div>
+							<span>Вы подписаны</span>
+					    </div>
+						<div class="buttonHolder fl">
+						    <a href="#">Отписаться</a>
+						</div>	
+
+						<span class="nextonhalf"><a href="#">Венглинский Д.</a>, <a href="#">Орлов Ю.</a>, <a href="#">Антонов Г.</a>, и другие проголосовали за эту запись <a href="#">См. всех</a></span>
+					</li>
+					<li class="share">
+						<h3>Репостов и цитат: Много (9643)</h3>
+						<div class="buttonHolder fl">
+						    <a href="#"><span></span>Рассказать на своей странице</a>
+						</div>	
+
+						<span class="nextonhalf"><a href="#">Венглинский Д.</a>, <a href="#">Орлов Ю.</a>, <a href="#">Антонов Г.</a>, и другие проголосовали за эту запись <a href="#">См. всех</a></span>
+							
+					</li>
+					<li class="comments clearfix">
+						<h3>Комментариев: Очень много (187)</h3><i>Регистрация не требуется</i>
+						<div class="textarea-holder clearfix row-fluid">
+							<div class="span9">
+								<textarea name="" id="" cols="30" rows="10" class="styled-input">Введите текст комментария</textarea>
+							</div>
+							<div class="textarea-social span3">
+								<span>Добавить с помощью соц сетей</span>
+								<ul class="clearfix">
+									<li><a href="#"><img src="img/icons/odk-icon.png" alt=""></a></li>
+									<li><a href="#"><img src="img/icons/vk-icon-new.png" alt=""></a></li>
+									<li><a href="#"><img src="img/icons/face-icon-new.png" alt=""></a></li>
+									<li><a href="#"><img src="img/icons/twitter-icon-new.png" alt=""></a></li>
+
+									<li class="hide-on-half"><a href="#"><img src="img/icons/gplus-icon.png" alt=""></a></li>
+									<li class="hide-on-half"><a href="#"><img src="img/icons/linked-ico.png" alt=""></a></li>
+									<li class="hide-on-half"><a href="#"><img src="img/icons/ve-icon.png" alt=""></a></li>
+									<li class="hide-on-half"><a href="#"><img src="img/icons/some-icon.png" alt=""></a></li>
+								</ul>
+								<a href="#" class="addcommentButton">
+									Добавить комментарий
+								</a>	
+							</div>
+						</div>
+					</li>
+				</ul>	
+				<div class="comment-holder">
+					<div class="comment clearfix">
+						<div class="comment-heading"><a href="#">Венглинский Дмитрий</a> написал(а) в 11.12.2012 в 16:46:</div>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
+						<div class="comment-footer">
+							<div class="right-side">
+								<a href="#"><img src="img/icons/aIcon2.png" alt=""></a>
+								<a href="#"><img src="img/icons/hash-icon.png" alt=""></a>								
+								<div class="starSignHolder">
+									<div class="starSign true" ></div>
+							    </div>
+
+							</div>
+							<div class="left-side">
+								<a href="#">Ответить</a>
+								<div class="rowBox negative">
+								  <a class="rowBoxup" href="#">Поднять</a>	
+								  <p>17</p>
+								  <a class="rowBoxdown" href="#">Снизить</a>					  
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="comment clearfix">
+						<div class="comment-heading"><a href="#">Венглинский Дмитрий</a> написал(а) в 11.12.2012 в 16:46:</div>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
+						<div class="comment-footer">
+							<div class="right-side">
+								<a href="#"><img src="img/icons/aIcon2.png" alt=""></a>
+								<a href="#"><img src="img/icons/hash-icon.png" alt=""></a>								
+								<div class="starSignHolder">
+									<div class="starSign true" ></div>
+							    </div>
+
+							</div>
+							<div class="left-side">
+								<a href="#">Ответить</a>
+								<div class="rowBox negative">
+								  <a class="rowBoxup" href="#">Поднять</a>	
+								  <p>17</p>
+								  <a class="rowBoxdown" href="#">Снизить</a>					  
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="comment clearfix">
+						<div class="comment-heading"><a href="#">Венглинский Дмитрий</a> написал(а) в 11.12.2012 в 16:46:</div>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
+						<div class="comment-footer">
+							<div class="right-side">
+								<a href="#"><img src="img/icons/aIcon2.png" alt=""></a>
+								<a href="#"><img src="img/icons/hash-icon.png" alt=""></a>								
+								<div class="starSignHolder">
+									<div class="starSign true" ></div>
+							    </div>
+
+							</div>
+							<div class="left-side">
+								<a href="#">Ответить</a>
+								<div class="rowBox negative">
+								  <a class="rowBoxup" href="#">Поднять</a>	
+								  <p>17</p>
+								  <a class="rowBoxdown" href="#">Снизить</a>					  
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="comment clearfix">
+						<div class="comment-heading"><a href="#">Венглинский Дмитрий</a> написал(а) в 11.12.2012 в 16:46:</div>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
+						<div class="comment-footer">
+							<div class="right-side">
+								<a href="#"><img src="img/icons/aIcon2.png" alt=""></a>
+								<a href="#"><img src="img/icons/hash-icon.png" alt=""></a>								
+								<div class="starSignHolder">
+									<div class="starSign true" ></div>
+							    </div>
+
+							</div>
+							<div class="left-side">
+								<a href="#">Ответить</a>
+								<div class="rowBox negative">
+								  <a class="rowBoxup" href="#">Поднять</a>	
+								  <p>17</p>
+								  <a class="rowBoxdown" href="#">Снизить</a>					  
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="comment clearfix">
+						<div class="comment-heading"><a href="#">Венглинский Дмитрий</a> написал(а) в 11.12.2012 в 16:46:</div>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
+						<div class="comment-footer">
+							<div class="right-side">
+								<a href="#"><img src="img/icons/aIcon2.png" alt=""></a>
+								<a href="#"><img src="img/icons/hash-icon.png" alt=""></a>								
+								<div class="starSignHolder">
+									<div class="starSign true" ></div>
+							    </div>
+
+							</div>
+							<div class="left-side">
+								<a href="#">Ответить</a>
+								<div class="rowBox negative">
+								  <a class="rowBoxup" href="#">Поднять</a>	
+								  <p>17</p>
+								  <a class="rowBoxdown" href="#">Снизить</a>					  
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="comment clearfix">
+						<div class="comment-heading"><a href="#">Венглинский Дмитрий</a> написал(а) в 11.12.2012 в 16:46:</div>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
+						<div class="comment-footer">
+							<div class="right-side">
+								<a href="#"><img src="img/icons/aIcon2.png" alt=""></a>
+								<a href="#"><img src="img/icons/hash-icon.png" alt=""></a>								
+								<div class="starSignHolder">
+									<div class="starSign true" ></div>
+							    </div>
+
+							</div>
+							<div class="left-side">
+								<a href="#">Ответить</a>
+								<div class="rowBox negative">
+								  <a class="rowBoxup" href="#">Поднять</a>	
+								  <p>17</p>
+								  <a class="rowBoxdown" href="#">Снизить</a>					  
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="comment clearfix">
+						<div class="comment-heading"><a href="#">Венглинский Дмитрий</a> написал(а) в 11.12.2012 в 16:46:</div>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
+						<div class="comment-footer">
+							<div class="right-side">
+								<a href="#"><img src="img/icons/aIcon2.png" alt=""></a>
+								<a href="#"><img src="img/icons/hash-icon.png" alt=""></a>								
+								<div class="starSignHolder">
+									<div class="starSign true" ></div>
+							    </div>
+
+							</div>
+							<div class="left-side">
+								<a href="#">Ответить</a>
+								<div class="rowBox negative">
+								  <a class="rowBoxup" href="#">Поднять</a>	
+								  <p>17</p>
+								  <a class="rowBoxdown" href="#">Снизить</a>					  
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="comment clearfix">
+						<div class="comment-heading"><a href="#">Венглинский Дмитрий</a> написал(а) в 11.12.2012 в 16:46:</div>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
+						<div class="comment-footer">
+							<div class="right-side">
+								<a href="#"><img src="img/icons/aIcon2.png" alt=""></a>
+								<a href="#"><img src="img/icons/hash-icon.png" alt=""></a>								
+								<div class="starSignHolder">
+									<div class="starSign true" ></div>
+							    </div>
+
+							</div>
+							<div class="left-side">
+								<a href="#">Ответить</a>
+								<div class="rowBox negative">
+								  <a class="rowBoxup" href="#">Поднять</a>	
+								  <p>17</p>
+								  <a class="rowBoxdown" href="#">Снизить</a>					  
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="comment clearfix">
+						<div class="comment-heading"><a href="#">Венглинский Дмитрий</a> написал(а) в 11.12.2012 в 16:46:</div>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
+						<div class="comment-footer">
+							<div class="right-side">
+								<a href="#"><img src="img/icons/aIcon2.png" alt=""></a>
+								<a href="#"><img src="img/icons/hash-icon.png" alt=""></a>								
+								<div class="starSignHolder">
+									<div class="starSign true" ></div>
+							    </div>
+
+							</div>
+							<div class="left-side">
+								<a href="#">Ответить</a>
+								<div class="rowBox negative">
+								  <a class="rowBoxup" href="#">Поднять</a>	
+								  <p>17</p>
+								  <a class="rowBoxdown" href="#">Снизить</a>					  
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			<!--<div class="comment-bottom"></div>-->
+			</div>
+
+			<div class="slide-panel-button">
+				<a href="#" class="open-panel">open Panel</a>
+				<a href="#" class="drag-panel">drag Panel</a>
+				<a href="#" class="close-panel">Close Panel</a>
+			</div>
+			
+		</div>
+	<!-- END SLIDE PANEl-->
+
+	  <div class="row-fluid article"> 	
+		<div class="span12 headermyNotebook">
+				<div class="headerRecordingList clearfix">
+				  <div class="iconUser">
+					<a href="#"><img src="img/elem/user1.jpg" alt=""></a>
+					<div class="userInfo">
+						<h3>Жириновский Евгений Викторович</h3>
+						<div class="starSignHolder true">
+							<div class="starSign"></div>
+							<span>Вы подписаны</span>
+					    </div>
+					    <a href="#" class="userlink">БЛОКНОТ.РФ/Жириновский</a>
+				 		<div class="buttonHolder"><a href="#" class="blueButtonS">Отправить сообщение</a></div>
+						<div class="userData">
+							<p>Рейтинг: Очень высокий (1587.7)</p>
+							<p>Записей: <a href="#">199 (Активній автор)</a></p>
+							<p>Комментариев: <a href="#">1828 (обсуждаемій автор)</a></p>
+							<p>Подписчиков: <a href="#">186 384 (популярній автор)</a></p>
+						</div>
+					</div>
+				  </div>	
+				  <div class="durationList dreamList">
+				    <a class="smallTheme" href="#"><img src="img/icons/theme2.png" alt=""></a>
+				  </div>
+				  <div class="articleTitle clearfix">
+					<h2>Заголовок записи вроде как длинный</h2>
+					<div class="ageMark">18+</div>
+					<div class="starSignHolder false">
+						<div class="starSign"></div>
+						<span class="hide-on-half">Вы подписаны</span>
+				    </div>		
+
+				  </div>
+				  <div class="showOnMap">
+					<span class="hide-on-half">Показать на карте</span>
+				  </div>
+				  <ul class="breadcrumbsRecordsList">
+					<li>Объект сна: <a href="#">Юрий Гагарин</a></li>
+					<li>Тема сна: Путешествие на шоколадную планету</li>
+				  </ul>		
+				</div>
+				
+				<div class="clearfix">
+				  <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.  </p>
+				</div>
+				<div class="clearfix">
+					<a href="#" class="fileLink">Прикрепленный файл.xls</a>
+				</div>
+
+				<div class="clearfix articleContent">
+					
+					<p>
+					Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. </p>
+					<div class="imageHolder"><img src="img/elem/video.jpg" alt="" class="videoImg"></div><p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. </p>
+					<p>Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </p>
+					<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit.</p>
+					<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. </p>
+					<div class="audioHolder">
+						<audio preload="auto" controls>
+							<source src="audio/BlueDucks_FourFlossFiveSix.mp3">
+							<source src="audio/BlueDucks_FourFlossFiveSix.ogg">
+							<source src="audio/BlueDucks_FourFlossFiveSix.wav">
+						</audio>
+						<script src="js/audioplayer.js"></script>
+						<script>
+						$( function() { 
+							$( 'audio' ).audioPlayer(); 
+							$(".audioplayer-bar-loaded").html("<img src='img/icons/progress-bar.png' alt=''/>")
+							$(".progressed-bar").css({
+								width: $(".audioplayer-bar").width()
+							}).html("<img src='img/icons/active-progress.png' alt=''/>");
+						});
+						</script>
+					</div>
+					<div class="imageHolder"></div><p>Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </p>
+					<p>
+					Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+					<p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+				</div>
+				<div class="span12 questionHolder clearfix">
+				 <h3>Здесь будет вопрос о полезности.......?</h3>
+				 <ul>
+				 	<li><div class="buttonHolder"><a href="#" class="blueButtonS">Да</a></div></li>
+				 	<li><div class="buttonHolder"><a href="#" class="blueButtonS">Не да</a></div></li>
+				 	<li><div class="buttonHolder"><a href="#" class="blueButtonS">Ни рыба ни мясо</a></div></li>
+				 	<li><div class="buttonHolder"><a href="#" class="blueButtonS">Я бы не назвал шедевром</a></div></li>
+				 	<li><div class="buttonHolder"><a href="#" class="blueButtonS">Нет</a></div></li>
+				 </ul>
+				</div>
+			</div>
+			<div class="row-fluid">	
+				<div class="span12 footerRecordingList clearfix">
+					<div class="span10">
+					  <ul class="navListRecording">
+						<li class="author-holder"><span class="hide-on-half">Автор:</span> <a href="#">Д<span class="hide-on-half">митрий</span> Венглинский </a>
+							<div class="starSignHolder">
+								<div class="starSign true"></div>
+						    </div>
+						</li>
+						<li>-</li>
+						<li><span class="hide-on-half">Место: </span><a href="#">Москва</a> <span class="hide-on-half">(дом)</span></li>
+					    <li>-</li>
+						<li><span class="hide-on-half">Приватность: </span><a href="#">Для всех</a></li>
+						<li>-</li>
+						<li>Сегодня в 16:56</li>
+	 					<li>
+	   						<a class="dang fl" href="#"><img src="img/icons/aIcon1.png" alt=""/></a>
+	    					<a class="dang fl" href="#"><img src="img/icons/aIcon2.png" alt=""/></a>
+	  				  	</li>	
+					  </ul>
+				  	</div>
+				  	<div class="span2">
+				  		<div class="buttonHolder fl-r hide-on-half"><a href="#" class="green-button comment-button">Комментировать</a></div>
+				  	</div>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="span12 clearfix socialFooter">
+					<ul class="clearfix">
+						<li>Поделись записью<span class="hide-on-half"> с друзьями в социальніх сетях</span></li>
+						<li><a href="#"><img src="img/icons/odk-icon.png" alt=""></a>1983</li>
+						<li><a href="#"><img src="img/icons/vk-icon-new.png" alt=""></a>12034</li>
+						<li><a href="#"><img src="img/icons/face-icon-new.png" alt=""></a>6312</li>
+						<li><a href="#"><img src="img/icons/twitter-icon-new.png" alt=""></a>4329</li>
+						<li><a href="#"><img src="img/icons/other-social-icon.png" alt=""></a>Другие сети</li>
+					</ul>
+				</div>
+		    </div>
+		    </div>
+
+
+		</div>
+	  </div>	
+
+	</div><!-- #content-->
+	
+</div><!-- #wrapper -->
+
+<div id="footer">
+  <div class="row-fluid">
+    <div class="span3">
+      <a href="#" class="bottom-logo"><img src="img/elem/logo.png" alt=""></a>
+      <ul class="social-buttons">
+        <li><a href="#"><img src="img/icons/facebook-ico.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/google-ico.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/link-ico.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/mail-co.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/ok-ico.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/vk-ico.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/yandex-ico.png" alt=""></a></li>
+      </ul>
+      <p class="copyright">
+        © 2013 Все права защищены
+      </p>
+    </div>
+    <div class="span3">
+      <ul class="bottom-nav">
+        <li class="main-link"><a href="#">О сервисе</a></li>
+        <li><a href="#">О Блокноте</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Условия договора</a></li>
+        <li><a href="#">Политика конфиденциальности</a></li>
+        <li><a href="#">Разработчики сервиса</a></li>
+      </ul>
+    </div>
+    <div class="span3">
+      <ul class="bottom-nav">
+        <li class="main-link"><a href="#">Блокнот пользователя</a></li>
+        <li class=""><a href="#">Записи</a></li>
+        <li><a href="#">Сообщения</a><span class="number">+18</span></li>
+        <li><a href="#">Места</a></li>
+        <li><a href="#">Настройки</a></li>
+        <li><a href="#">Выход</a></li>
+      </ul>
+    </div>
+    <div class="span3">
+      <a href="#" class="to-top-link">Поднять</a>
+      <p>Использовано дискового пространства:<br>93 Mb из 100 Mb (93%)</p>
+    </div>
+  </div>
+</div><!-- #footer -->
+
+</body>
+</html>

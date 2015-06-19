@@ -1,0 +1,290 @@
+@charset "utf-8";
+/*@import "reset.css"*/
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font: 12px/18px Tahoma, Arial, Verdana, sans-serif;
+    line-height: 1.2;
+	width: 100%;
+    background: url("../images/body_bg.png") repeat 0 0 scroll transparent;
+}
+a {
+	color: blue;
+	outline: none;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+p {
+	margin: 0 0 18px
+}
+img {
+	border: none;
+}
+input {
+	vertical-align: middle;
+}
+ul{
+    list-style: inside none;
+}
+#wrapper {
+	width: 1200px;
+	margin: 0 auto;
+    overflow: hidden;
+}
+
+/* ״נטפע
+-----------------------------------------------------------------------------*/
+@font-face {
+    font-family: 'SegoePrint';
+      src: url('Segoe-Print.eot') format('eot'),
+           url('Segoe-Print.ttf') format('truetype');
+     font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+	height: 360px; width: 100%;
+	background: url("../images/header.png") no-repeat center top scroll transparent;
+    float:left;
+    font-family: 'SegoePrint';
+}
+ #header #logo, #header .nav, #header .subnav, #header .contacts{
+    float: left
+ } 
+    #header #logo{
+        background: url("../images/logo.png") no-repeat 0 0 scroll transparent;
+        height: 209px;
+        padding: 30px 80px 100px 20px;
+        width: 365px;
+    }
+        #header #logo a{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    #header .nav{
+        margin-left: -70px;
+    }    
+    #header .nav ul{
+    width: 250px;
+    }
+        #header .nav ul li{
+            background: #f7d917;
+            width: 240px;
+            text-align: center;
+            margin: 5px 0; 
+            float: left;
+            padding: 0 5px;
+        }
+            #header .nav ul li a{
+                width: 100%;
+                display: block;
+                min-height: 18px;
+                padding: 10px 0 ;
+                font-family: 'SegoePrint';
+                font-size: 16px;
+                color: #000;
+                text-decoration: none
+    
+            }
+            
+            #header .nav ul li a:hover{
+                text-decoration: underline;
+            }
+
+    #header .subnav ul{
+        margin-top: 5px;
+        background: #ffe8c5;
+        padding: 0 10px;
+        width: 230px;
+    }
+    
+        #header .subnav ul li{
+            border-top: 1px solid #000;
+        }
+        #header .subnav ul li:first-child{
+            border: none;
+        }
+        #header .subnav ul li a{
+            color: #000;
+            line-height: 2.5;
+            text-decoration: none
+        }
+        #header .subnav ul li a:hover{
+            text-decoration: underline;
+        }
+        
+    #header .contacts{
+        font-size: 20px;
+        color: #fff;
+        margin: 30px 0 0 30px;
+    }
+    #header .contacts .feed_but{
+        background: url("../images/feed_but.png") no-repeat scroll 0 0 transparent;
+        height: 22px;
+        margin-top: -30px;
+        padding: 47px 50px 33px 45px;
+        width: 145px;
+
+        }
+            #header .contacts .feed_but a{
+                font-size: 17px;
+                color: #fff;
+                text-decoration: none
+            }
+            #header .contacts .feed_but a:hover{
+                text-decoration: underline;
+            }
+/* Middle
+-----------------------------------------------------------------------------*/
+#content {
+    float: left;
+    clear: both;
+    overflow: hidden;
+    width: 100%;
+    margin-top: -30px;
+}
+    #company, #predlag, #partners{
+        float: left;
+        clear: both;
+        
+    }
+    #company {
+        padding: 0 80px;
+    }
+        #company h2{
+            background: url("../images/h2_comp.png") no-repeat;
+            height: 40px;
+            width: 238px;
+            margin: 0 auto;
+            display: block;
+            text-indent: -9999px;
+        }
+    
+        #company .c_block{
+            background: url("../images/comp_bl.png") no-repeat scroll 0 0 transparent;
+            float: left;
+            height: 145px;
+            margin: 10px;
+            padding: 55px 33px 40px 71px;
+            width: 222px;
+        }
+            #company .c_block h3{
+                color: #009C5C;
+                
+                font-family: 'SegoePrint';
+                font-size: 12px;
+                margin: 10px 0;
+                text-align: center;
+                width: 225px;
+                padding: 0;
+            }
+            #company .c_block p{
+                clear: both;
+                font-style: italic;
+                color: #858585
+            }
+            #company .c_block a.readon{
+                background: url("../images/readon.png") no-repeat scroll 0 0 transparent;
+                color: #000000;
+                display: block;
+                font-family: 'SegoePrint';
+                font-size: 14px;
+                margin: 0 auto;
+                padding: 5px;
+                text-align: center;
+                text-decoration: none;
+                width: 80px;
+        }
+    
+    #predlag{
+        background: url("../images/partners.png") no-repeat scroll 0 0 transparent;
+        height: 285px;
+        padding: 30px 80px;
+        width: 1040px;
+
+    }
+        #predlag h2{
+            background: url("../images/h2_pred.png") no-repeat;
+            height: 40px;
+            width: 238px;
+            margin: 0 auto;
+            display: block;
+            text-indent: -9999px;
+        }
+    
+    
+      #predlag .p_block{
+            float: left;
+            position: relative;
+            width:208px
+     }
+        #predlag .p_block .bg_abs{
+                        background: url("../images/prod_bg.png") no-repeat scroll 0 0 transparent;
+            float: left;
+            padding: 25px 56px 25px 60px;
+            position: relative;
+            text-align: center;
+            width: 100px;  
+            height: 100px; 
+        }
+        #predlag .p_block img{
+            max-width: 100px;
+            max-height: 100px;
+            position: relative;
+            z-index: 1;
+        }
+
+        #predlag .p_block a{
+            clear: both;
+            color: #009c5c;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+        }
+        #predlag .p_block a:hover{
+                text-decoration: underline;
+            }
+            
+    #partners{        
+        padding: 0 80px;
+        width: 1040px;
+        
+    }
+        #partners h2{
+            background: url("../images/h2_partners.png") no-repeat;
+            height: 40px;
+            width: 238px;
+            margin: 0 auto;
+            display: block;
+            text-indent: -9999px;
+        }
+    #partners .part{
+        background: url("../images/part.png") no-repeat;
+        height: 54px;
+        width: 167px;
+        float:left;
+        margin-bottom: 20px;
+        margin-right: 40px;
+    }
+    
+        
+/* Footer
+-----------------------------------------------------------------------------*/
+#footer {
+    clear: both;
+    float: left;
+    height: 72px;
+    width: 100%;
+	background:  url("../images/footer.png") no-repeat;
+}

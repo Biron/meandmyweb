@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Savanne';
+    src: url('fonts/Savanne.eot');
+    src: local('☺'), url('fonts/Savanne.ttf') format('truetype'), url('fonts/Savanne.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*@font-face {
+	font-family: 'FreightSans_Light';
+	src: url('fonts/FreightSans_Light.eot');
+	src: local('☺'), url('fonts/FreightSans_Light.woff') format('woff'), url('fonts/FreightSans_Light.ttf') format('truetype'), url('fonts/FreightSans_Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'FreightSans_Medium';
+	src: url('fonts/FreightSans_Medium.eot');
+	src: local('☺'), url('fonts/FreightSans_Medium.woff') format('woff'), url('fonts/FreightSans_Medium.ttf') format('truetype'), url('fonts/FreightSans_Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'FreightSans_Bold';
+	src: url('fonts/FreightSans_Bold.eot');
+	src: local('☺'), url('fonts/FreightSans_Bold.woff') format('woff'), url('fonts/FreightSans_Bold.ttf') format('truetype'), url('fonts/FreightSans_Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}*/
+
+@font-face {
+    font-family: 'FreightSans_Light';
+    src: url('fonts/freightsans_light-webfont.eot');
+    src: url('fonts/freightsans_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/freightsans_light-webfont.woff') format('woff'),
+         url('fonts/freightsans_light-webfont.ttf') format('truetype'),
+         url('fonts/freightsans_light-webfont.svg#freightsans_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'FreightSans_Bold';
+    src: url('fonts/freightsans_bold-webfont.eot');
+    src: url('fonts/freightsans_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/freightsans_bold-webfont.woff') format('woff'),
+         url('fonts/freightsans_bold-webfont.ttf') format('truetype'),
+         url('fonts/freightsans_bold-webfont.svg#freightsans_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'FreightSans_Medium';
+    src: url('fonts/freightsans_medium-webfont.eot');
+    src: url('fonts/freightsans_medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/freightsans_medium-webfont.woff') format('woff'),
+         url('fonts/freightsans_medium-webfont.ttf') format('truetype'),
+         url('fonts/freightsans_medium-webfont.svg#freightsans_mediumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

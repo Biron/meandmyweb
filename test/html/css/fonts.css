@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'archiveregular';
+    src: url('fonts/Archive.eot');
+    src: url('fonts/Archive?#iefix') format('embedded-opentype'),
+         url('fonts/Archive.woff') format('woff'),
+         url('fonts/Archive.ttf') format('truetype'),
+         url('fonts/Archive.svg#archiveregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

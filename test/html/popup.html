@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Блокнот | Настройки | Общая информация</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-modal.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="css/ui-lightness/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+  
+  <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+  <script src="js/jquery-ui-1.10.3.custom.js"></script>
+  <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+  <script type="text/javascript" src="js/jquery.selectbox.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+  <script type="text/javascript" src="js/bootstrap-modal.js"></script>
+  <script type="text/javascript" src="js/bootstrap-modalmanager.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  
+  <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/ie.css">
+  <![endif]-->
+  <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="css/ie7.css">
+  <![endif]-->
+</head>
+
+<body>
+<div id="wrapper">
+
+	<div id="header">
+    
+    <div class="row-fluid">
+      <div class="span3">
+        <div class="logo"><a href="#"><img src="img/elem/logo.png" alt=""></a></div>
+      </div>
+      <div class="span9">
+        <div class="main-navigation logged-in">
+          <ul>
+            <li class="my-note current"><a href="#">Мой блокнот</a></li>
+            <li class="filter"><a href="#">Фильтры</a></li>
+            <li class="search"><a href="#">Поиск</a></li>
+            <li class="news"><a href="#">Уведомления<span class="news-numder">3</span></a></li>
+          </ul>
+        </div>        
+    
+        <div class="control-panel logged-in">
+          <ul>
+            <li class="location"><a href="#">Санкт-Петербург</a></li>
+            <li class="navigation-add-button"><a href="#">Добавить</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+      <div class="bottom-line"></div>
+     <!--inner menu list-->
+	  <div class="fullwidth">
+  		<div class="leftSideBar">
+  		  <ul class="innerMenu">
+  		    <li><a href="#"><img src="img/elem/icon1.png" alt=""/>Папки</a></li>
+		    <li><a href="#"><img src="img/elem/icon2.png" alt=""/>Записи</a></li>
+		    <li><a href="#"><img src="img/elem/icon3.png" alt=""/>Сообщения <span class="colorG">+18</span></a></li>
+		    <li><a href="#"><img src="img/elem/icon4.png" alt=""/>Места</a></li>
+		    <li><a href="#"><img src="img/elem/icon5.png" alt=""/>Группы</a></li>
+		    <li><a href="#"><img src="img/elem/icon6.png" alt=""/>Контакты</a></li>
+  		  </ul>
+  		</div>
+  		<div class="rightSideBar">
+  		  <ul class="innerMenu rightSideMenu">
+  			<li><a class="active" href="#"><img src="img/elem/icon7.png" alt=""/>Настройки</a></li>
+			<li><a href="#"><img src="img/elem/icon8.png" alt=""/>Выход</a></li>
+  		  </ul>	
+  		</div>
+	  </div><!--end:inner menu list-->
+	</div><!-- #header-->
+
+
+	<div id="content">
+	  <ul>	
+		<li>
+			<!-- Button to trigger modal -->
+			<a href="#myModal1" role="button" class="btn" data-toggle="modal">добавление аудио</a>
+			<!-- Modal -->
+			<div id="myModal1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-header clearfix">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/elem/close_button.png" alt=""/></button>
+				<h3 id="myModalLabel">Добавление аудио к записи</h3>
+				<i>Чтобы вставить аудиозапись, вам нужно либо загрузить её с компьютера, либо указать ссылку на неё</i>
+			  </div>
+			  <div class="modal-body clearfix">
+				<div class="span3">
+				  <select>
+				   <option>Загрузить с компьютера</option>
+				   <option>Загрузить с компьютера</option>
+				   <option>Загрузить с компьютера</option>
+				  </select>
+				</div>  
+				<div class="span7 inputImages">
+				  <div class="file-input">
+					<input type="file" class="file" name="load" id="load" />
+					<div class="fakefile">
+					  <input type="text" class="filetext"/>
+					  <div class="buttonHolder">
+						<a href="#">Обзор</a>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				<div class="span2 customButtonGrid fl">
+				  <input class="submitButton" type="submit" value="Вставить аудио" name="submit"> 	
+				</div>	
+			  </div>
+			</div>
+		</li>
+		
+		<li>
+			<!-- Button to trigger modal -->
+			<a href="#myModal2" role="button" class="btn" data-toggle="modal">Добавление видео к записи</a>
+			<!-- Modal -->
+			<div id="myModal2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-header clearfix">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/elem/close_button.png" alt=""/></button>
+				<h3 id="myModalLabel">Добавление видео к записи</h3>
+			  </div>
+			  <div class="modal-body clearfix">
+				<div class="span10">
+				  <input class="italicInput videoInput styled-input" type="text" name="video href" value="Вставьте ссылку на видео чтобы разместить его в записи"/>	
+				</div>
+				<div class="span2 customButtonGrid4 fr">
+				  <input class="submitButton" type="submit" value="Вставить видео" name="submit"> 	
+				</div>
+			  </div>
+			</div>
+		</li>	
+		
+		<li>
+			<!-- Button to trigger modal -->
+			<a href="#myModal3" role="button" class="btn" data-toggle="modal">Добавление изображения</a>
+			<!-- Modal -->
+			<div id="myModal3" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-header clearfix">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/elem/close_button.png" alt=""/></button>
+				<h3 id="myModalLabel">Добавление изображения</h3>
+				<i>Чтобы вставить изображение, вам нужно либо загрузить его с компьютера, либо указать ссылку на него</i>
+			  </div>
+			  <div class="modal-body clearfix">
+				<div class="span3">
+				  <select>
+				   <option>Загрузить с компьютера</option>
+				   <option>Открыть в новом окне</option>
+				   <option>Открыть в текущем окне</option>
+				  </select>
+				</div>  
+				<div class="span6 inputImages">
+				  <div class="file-input">
+					<input type="file" class="file" name="load" id="load" />
+					<div class="fakefile">
+					  <input type="text" class="filetext"/>
+					  <div class="buttonHolder">
+						<a href="#">Обзор</a>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				<div class="span3 customButtonGrid2 fr">
+				  <input class="submitButton" type="submit" value="Вставить изображение" name="submit"> 	
+				</div>	
+			  </div>
+			</div>
+		</li>
+		
+		
+		<li>	
+			<!-- Button to trigger modal -->
+			<a href="#myModal4" role="button" class="btn" data-toggle="modal">Добавление ссылки</a>
+			<!-- Modal -->
+			<div id="myModal4" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-header clearfix">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/elem/close_button.png" alt=""/></button>
+				<h3 id="myModalLabel">Добавление ссылки</h3>
+				<i>Вы можете или вставлять ссылку просто среди текста, или вначале выделить текст, после чего присваивать ему ссылку</i>
+			  </div>
+			  <div class="modal-body clearfix">
+				<div class="grid_1 fl">
+				  <input class="italicInput videoInput styled-input" type="text" name="href" value="Cсылка"/>	
+				</div>
+				<div class="grid_2 fr">
+				  <input class="italicInput styled-input" type="text" name="href" value="Текст ссылки"/>
+				</div>
+				<div class="grid_3 fr">
+				  <div class="fr">
+					<input class="submitButton" type="submit" value="Вставить ссылку" name="submit"> 
+				  </div>	
+				  <div class="span3 spanGrid">
+				    <select>
+					   <option>Загрузить с компьютера</option>
+					   <option>Открыть в новом окне</option>
+					   <option>Открыть в текущем окне</option>
+				    </select>
+				  </div>	
+				</div>
+			  </div>
+			</div>
+		</li>	
+		
+		<li>	
+			<!-- Button to trigger modal -->
+			<a href="#myModal5" role="button" class="btn" data-toggle="modal">Добавление контакта</a>
+			<!-- Modal -->
+			<div id="myModal5" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-header clearfix">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/elem/close_button.png" alt=""/></button>
+				<h3 id="myModalLabel">Добавление контакта</h3>
+			  </div>
+			  <div class="modal-body clearfix">
+				<div class="span5">
+				  <input class="customInput styled-input" type="text" name="href" value="Начинте вводить фамилию, имя, имейл контакта"/>	
+				</div>
+				<div class="span4">
+				  <input class="customInput styled-input" type="text" name="href" value="Как отображать этот контакт"/>
+				</div>
+				<div class="span3 customButtonGrid3 fl">
+					<input class="submitButton" type="submit" value="Добавить контакт" name="submit">
+				</div>
+			  </div>
+			</div>
+		</li>
+		
+		<li>	
+			<!-- Button to trigger modal -->
+			<a href="#myModal6" role="button" class="btn" data-toggle="modal">Добавление\редактирование места</a>
+			<!-- Modal -->
+			<div id="myModal6" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-header clearfix">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/elem/close_button.png" alt=""/></button>
+				<h3 id="myModalLabel">Добавление\редактирование места</h3>
+				<div class="listDiskSpace-button fl"><a href="#">Удалить это место</a></div>
+			  </div>
+			  <div class="modal-body clearfix">
+				<div class="span3">
+				  <label class="specLabel">Выборите регион</label>	
+				</div>
+			    <div class="span6 edPan6 helpClassIe">
+				  <label class="specLabel">Уточните ваше местоположение</label>
+				</div>
+				<div class="span3">
+				  <select>
+				   <option>Москва</option>
+				   <option>Москва</option>
+				   <option>Москва</option>
+				  </select>
+				</div>  
+				<div class="span6 edPan6">
+					<input type="text" class="customInput styled-input" name="text" value="Начните вводить название улицы..." />
+				</div>
+				<div class="fr customButtomEdit">
+				  <input class="submitButton" type="submit" value="Определить автоматически" name="submit"> 	
+				</div>
+				<div class="fullGrid">
+				  <i>Вы можете воспользоваться полями сверху, либо прямо на карте передвинуть точку в нужное место</i>
+				  <img src="img/content/map.jpg" alt=""/>		
+				</div>
+				<div class="fl textSide">
+				  <p>Сохранить эту точку как (Это будет видно только вам)</p>
+				</div>
+				<div class="span6 edPanBbottom6">
+				  <input class="customInput styled-input" type="text" name="href" value="Например, Дом, Работа, Дача..."/>	
+				</div>
+				<div class="fr customButtomEdit2">
+					<input class="submitButton greenSubmit" type="submit" value="Сохранить" name="submit">
+				</div>				
+			  </div>
+			</div>
+		</li>
+		
+		<li>
+			<!-- Button to trigger modal -->
+			<a href="#myModal7" role="button" class="btn" data-toggle="modal">Добавление\редактирование папки</a>
+			<!-- Modal -->
+			<div id="myModal7" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-header clearfix">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/elem/close_button.png" alt=""/></button>
+				<h3 id="myModalLabel">Добавление\редактирование папки</h3>
+				<div class="listDiskSpace-button fl"><a href="#">Удалить папку</a></div>
+			  </div>
+			  <div class="modal-body clearfix">
+				<div class="span10">
+				  <input class="customInput styled-input" type="text" name="video href" value="Введите название папки"/>	
+				</div>
+				<div class="fr customButtomEdit3">
+				  <input class="submitButton" type="submit" value="Сохранить папку" name="submit"> 	
+				</div>
+			  </div>
+			</div>
+		</li>	
+		
+		<li>	
+			<!-- Button to trigger modal -->
+			<a href="#myModal8" role="button" class="btn" data-toggle="modal">Жалоба на комментарий</a>
+			<!-- Modal -->
+			<div id="myModal8" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-header clearfix">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/elem/close_button.png" alt=""/></button>
+				<h3 id="myModalLabel">Жалоба на комментарий <span class="colorBlue">Начало текста комментария заканчивается троеточием...</span></h3>
+				<div class="fullGrid">
+				  <p class="colorGrey">Ссылка на страницу: <span><a href="#">http://блокнот.рф/pageid=1234735134#5465123</a></span></p>	
+				</div>
+			  </div>
+			  <div class="modal-body clearfix">
+				<ul class="listModalBlock">
+				  <li>
+					<select>
+					  <option>Выберите причину жалобы</option>
+					  <option>Выберите причину жалобы</option>
+					  <option>Выберите причину жалобы</option>
+					</select>
+				  </li>
+				  <li><input class="customInput styled-input" type="text" name="video href" value="Представьтесь пожалуйста"/></li>
+				  <li><input class="customInput styled-input" type="text" name="video href" value="Введите ваш E-mail для ответов *"/></li>
+				</ul>
+				<div class="fullGrid">
+                 <textarea name="text" id="text" maxlength="1500" class="styled-input">Опишите суть жалобы</textarea>
+                </div>
+				<div class="fullGrid">
+				  <div class="span10 wrapperUpload">
+					<div class="fileUpload">
+					  <a href="#">Названиефайла.jpg <span>1.6 Mb</span><img src="img/elem/close-button-small.png" alt=""/></a>
+					</div>
+					<div class="fileUpload">
+					  <a href="#">Названиефайла.jpg <span>1.6 Mb</span><img src="img/elem/close-button-small.png" alt=""/></a>
+					</div>
+					<div class="fileUpload">
+					  <input class="submitButton" type="submit" value="Прикрепить файл" name="Прикрепить файл">
+					</div>
+				  </div>	
+                  <div class="text-length fr">Осталось знаков: <span>1483</span></div>
+                </div>
+				<div class="fullGrid ieSevenClass">
+				  <p>Сотрудники БЛОКНОТ.РФ круглосуточно проверяют, соответствуют ли принципам сообщества записи и комментарии пользователей. За нарушение принципов сообщества владельцы аккаунтов получают предупреждения. Серьезные или неоднократные нарушения могут караться закрытием аккаунта. В ближайшее время после подачи жалобы мы рассмотрим ваше заявление и сообщим вам о решении.</p>	
+				</div>
+				<div class="buttonHolder hoverButtonUpload fr">
+				  <a href="#" class="blueButtonS uploadStyle">Отправить собщение</a>  
+				</div>
+			  </div>
+			</div>
+		</li>
+		
+		<li>	
+			<!-- Button to trigger modal -->
+			<a href="#myModal10" role="button" class="btn" data-toggle="modal">Напомнить позже</a>
+			<!-- Modal -->
+			<div id="myModal10" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-header clearfix">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/elem/close_button.png" alt=""/></button>
+				<h3 id="myModalLabel">Напомнить позже</h3>
+			  </div>
+			  <div class="modal-body clearfix">
+				<ul class="listTime">
+				  <li class="active clearfix">
+					<div class="radio-holder fl">
+						<span><input type="radio" value="" name="" class="radio"></span>
+					</div>
+					<div class="span2">
+					  <label>Дата напоминания</label>
+					  <input type="text" id="dateTime" name="from" class="hasDatepicker" value="01.05.2013">
+					</div>
+					<div class="span2">
+					  <label>Время напоминания</label>
+					  <input type="text" class="time" name="time" value="15:00:00"> 	
+					</div>
+				  </li>
+				  <li class="clearfix">
+					<div class="radio-holder fl">
+						<span><input type="radio" value="" name="" class="radio"></span>
+					</div>
+					<div class="span2">
+					  <label>Начальная дата</label>
+					  <input type="text" id="from" name="from" class="hasDatepicker" value="01.05.2013">	
+					</div>
+					<div class="span2">
+					  <label>Конечная дата</label>
+					  <input type="text" id="to" name="from" class="hasDatepicker" value="01.05.2013">	
+					</div>
+					<div class="span3">
+					  <label>Напоминать каждые</label>
+					  <select>
+						<option>3 дня</option>
+						<option>3 дня</option>
+						<option>3 дня</option>
+					  </select>
+					</div>
+				  </li>
+				  <li class="clearfix">
+					<div class="radio-holder fl">
+						<span><input type="radio" value="" name="" class="radio"></span>
+					</div>
+					<div class="span3">
+					  <label>Напоминать каждые</label>
+					  <select>
+						<option>3 дня</option>
+						<option>3 дня</option>
+						<option>3 дня</option>
+					  </select>
+					</div>
+					<div class="span2">
+					  <label>Время напоминания</label>
+					  <input type="text" class="time" name="time" value="15:00:00"> 
+					</div>
+				  </li>
+				</ul>
+				<div class="fullGrid">
+				  <div class="fr">
+					<input class="submitButton greenSubmit" type="submit" value="Сохранить" name="submit">
+				  </div>
+				  <div class="fr text-alignBox">
+                    <i>Напоминания будут приходить вам на почту и в уведомления сервиса, вы всегда сможете их отключить</i>
+				  </div>	
+				</div>
+			  </div>
+			</div>
+		</li>
+		
+		<li>	
+			<!-- Button to trigger modal -->
+			<a href="#myModal11" role="button" class="btn" data-toggle="modal">Отправка личного сообщения пользователю</a>
+			<!-- Modal -->
+			<div id="myModal11" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-header clearfix">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/elem/close_button.png" alt=""/></button>
+				<div class="customHeaderPopup fullGrid">
+				  <img src="img/content/avatar.jpg" alt=""/>	
+				  <h3 id="myModalLabel">Отправка личного сообщения пользователю <a href="#">Жириновский</a></h3>
+				  <input class="styled-input" type="text" name="" value="Тема сообщения"/>
+				</div>  
+			  </div>
+			  <div class="modal-body clearfix">
+				<div class="fullGrid">
+                 <textarea name="text" id="text" maxlength="1500" class="styled-input">Опишите суть жалобы</textarea>
+                </div>
+				<div class="fullGrid">
+				  <div class="span10 wrapperUpload">
+					<div class="fileUpload">
+					  <a href="#">Названиефайла.jpg <span>1.6 Mb</span><img src="img/elem/close-button-small.png" alt=""/></a>
+					</div>
+					<div class="fileUpload">
+					  <a href="#">Названиефайла.jpg <span>1.6 Mb</span><img src="img/elem/close-button-small.png" alt=""/></a>
+					</div>
+					<div class="fileUpload">
+					  <input class="submitButton" type="submit" value="Прикрепить файл" name="Прикрепить файл">
+					</div>
+				  </div>	
+                  <div class="text-length fr">Осталось знаков: <span>1483</span></div>
+                </div>
+				<div class="deviderTop"></div>
+				<div class="span6 customTextBox">
+					<div class="rightSideFormCrad checkbox-holder">
+					  <span><input class="checkBox" type="checkbox" name="visibleall"></span>
+					  <label>Отправить сообщение с задержкой</label>
+					</div>
+					<i>Отправку отложенного сообщения отменить нельзя</i>
+					<div class="fr">
+					  <select>
+						<option>2 месяца</option>
+						<option>2 месяца</option>
+						<option>2 месяца</option>
+					  </select>	
+					</div>
+				</div>	
+				<div class="buttonHolder hoverButtonUpload fr">
+				  <a href="#" class="blueButtonS uploadStyle">Отправить собщение</a>  
+				</div>
+			  </div>
+			</div>
+		</li>
+		
+		<li>	
+			<!-- Button to trigger modal -->
+			<a href="#myModal12" role="button" class="btn" data-toggle="modal">Подбор красивого URL страницы</a>
+			<!-- Modal -->
+			<div id="myModal12" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-header clearfix">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/elem/close_button.png" alt=""/></button>
+				<h3 id="myModalLabel">Подбор красивого URL страницы</h3>
+				<div class="fullGrid">
+				  <p class="colorGrey">Текущий адрес вашей страницы: <span><a href="#">http://блокнот.рф/16464984324</a></span></p>	
+				</div>
+			  </div>
+			  <div class="modal-body clearfix">
+				<p class="colorProt">Мы предлагаем вам варианты автоматически подобранные исходя из заполненных вами данных, вы можете выбрать один из предложенных вариантов либо написать свой. Допускается ввод символов А-Я, A-Z, 1-0</p>
+				<ul class="listNamePopup">
+				  <li class="active">
+					<div class="listNamePopupWrapper clearfix">
+						<div class="fl wrapperListPopup">
+							<p>http://блокнот.рф/</p>
+							<input class="styled-input" type="text" name="" alt="" value="Введите свой вариант">
+						</div>	
+						<div class="fl clearsoft">
+							<img src="img/icons/ok-icon.png" alt=""/>
+							<span class="colorGreen">Этот адрес свободен</span>
+						</div>
+					</div>	
+				  </li>
+				  <li>
+					<a href="#">http://блокнот.рф/дмитрий</a>
+				  </li>
+				  <li>
+					<a href="#">http://блокнот.рф/венглинский</a>
+				  </li>
+				  <li>
+					<a href="#">http://блокнот.рф/matrixcracker</a>
+				  </li>				  
+				</ul>
+				<div class="fullGrid">
+					<div class="buttonHolder hoverButtonUpload fr">
+						<a href="#" class="blueButtonS uploadStyle">Сохранить</a>  
+					</div>
+					<i class="clearSaveItalic fr">Стоимость услуги «Красивый URL» составляет 100 рублей в квартал</i>
+				</div>
+			  </div>
+			</div>
+		</li>
+		
+		<li>	
+			<!-- Button to trigger modal -->
+			<a href="#myModal13" role="button" class="btn" data-toggle="modal">Редактирование контакта</a>
+			<!-- Modal -->
+			<div id="myModal13" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-header clearfix">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/elem/close_button.png" alt=""/></button>
+				<h3 id="myModalLabel">Редактирование контакта</h3>
+				<div class="listDiskSpace-button fl"><a href="#">Удалить контакт</a></div>
+			  </div>
+			  <div class="modal-body clearfix">
+				<div class="fullGrid clearfix">
+				  <div class="leftSideEditAcc fl">
+					<img src="img/content/avatar.jpg" alt=""/>
+					<h4>Венглинский Дмитрий Сергеевич</h4>
+					<p>Отображаемое имя: <span>Дима дизайнер ВКТ</span></p>
+					<p>Рейтинг: <span>Очень высокий (254)</span></p>
+					<p>Записей: <span>1934 (Много)</span></p>
+					<p>Комментариев: <span>2365 (Очень много)</span></p>
+					<p>Подписчиков: <span>134 (Мало)</span></p>
+					<p>Записей в совместном доступе: <span>7</span></p>
+					<p>Предоставил доступ к записям: <span>18</span></p>
+					<p>3 года на сайте</p>
+				  </div>
+				  <div class="rightSideEditAcc fr">
+					<ul>
+						<li>
+							<label>Как отображать этот контакт</label>
+							<input class="customInput styled-input" type="text" name="video href" value="Этот будет видно только вам">
+						</li>
+						<li>
+							<label>Группа для этого контакта</label>
+							<select>
+								<option>Группа закоренелых проектировщиков</option>
+								<option>Группа закоренелых проектировщиков</option>
+								<option>Группа закоренелых проектировщиков</option>
+							</select>
+						</li>
+						<li>
+							<label>Скайп</label>
+							<input class="customInput styled-input" type="text" name="video href" value="Этот будет видно только вам">
+						</li>
+						<li>
+							<label>Телефон</label>
+							<input class="customInput styled-input" type="text" name="video href" value="Этот будет видно только вам">
+						</li>
+                        <li>
+							<label>Адрес</label>
+							<input class="customInput styled-input" type="text" name="video href" value="Этот будет видно только вам">
+						</li>
+					</ul>
+				  </div>	
+				</div>
+				<div class="fullGrid listAccess">
+				  <h3>Записи к которым контакту предоставлен доступ</h3>
+				  <ul>
+					<li>
+					  <div class="fl">	
+						<a class="dreamlist classIconsStyle" href="#"></a>
+						<a class="sectionA" href="#">This is Photoshop's version  of Lorem Ipsum</a> 
+                      </div>
+					  <div class="fr">
+						<div class="listDiskSpace-button"><a href="#">Закрыть доступ</a></div>
+						<p>Сегодня в 16:56</p>
+					  </div>	
+					</li>
+					<li>
+					  <div class="fl">	
+						<a class="memory classIconsStyle" href="#"></a>
+						<a class="sectionA" href="#">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor</a>
+                      </div> 
+					  <div class="fr">
+						<div class="listDiskSpace-button"><a href="#">Закрыть доступ</a></div>
+						<p>Вчера в 16:56</p>
+					  </div>
+					</li>
+					<li>
+					  <div class="fl">	
+						<a class="records classIconsStyle" href="#"></a>
+						<a class="sectionA" href="#">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi</a>
+                      </div>
+					  <div class="fr">
+						<div class="listDiskSpace-button"><a href="#">Закрыть доступ</a></div>
+						<p>26.02.2012 в 16:56</p>
+					  </div>					  
+					</li>
+					<li>
+					  <div class="fl">	
+						<a class="dreamlist classIconsStyle" href="#"></a>
+						<a class="sectionA" href="#">This is Photoshop's version  of Lorem Ipsum</a>
+                      </div>
+                      <div class="fr">
+						<div class="listDiskSpace-button"><a href="#">Закрыть доступ</a></div>
+						<p>Сегодня в 16:56</p>
+					  </div>					  
+					</li>
+				  </ul>	
+				</div>
+			  </div>
+			  <div class="modal-footer clearfix">
+			    <div class="span3 fr">
+				  <div class="fl">
+					<input class="submitButton pinkColor" type="submit" value="Отмена" name="submit">
+				  </div>	
+				  <div class="fr">
+					<input class="submitButton" type="submit" value="Сохранить" name="submit">
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</li>	
+			
+		</ul>
+    </div><!-- #content-->
+
+</div><!-- #wrapper -->
+
+<div id="footer">
+  <div class="row-fluid">
+    <div class="span3">
+      <a href="#" class="bottom-logo"><img src="img/elem/logo.png" alt=""></a>
+      <ul class="social-buttons">
+        <li><a href="#"><img src="img/icons/facebook-ico.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/google-ico.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/link-ico.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/mail-co.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/ok-ico.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/vk-ico.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/yandex-ico.png" alt=""></a></li>
+      </ul>
+      <p class="copyright">
+        © 2013 Все права защищены
+      </p>
+    </div>
+    <div class="span3">
+      <ul class="bottom-nav">
+        <li class="main-link"><a href="#">О сервисе</a></li>
+        <li><a href="#">О Блокноте</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Условия договора</a></li>
+        <li><a href="#">Политика конфиденциальности</a></li>
+        <li><a href="#">Разработчики сервиса</a></li>
+      </ul>
+    </div>
+    <div class="span3">
+      <ul class="bottom-nav">
+        <li class="main-link"><a href="#">Блокнот пользователя</a></li>
+        <li><a href="#">Записи</a></li>
+        <li><a href="#">Сообщения</a><span class="number">+18</span></li>
+        <li><a href="#">Места</a></li>
+        <li><a href="#">Настройки</a></li>
+        <li><a href="#">Выход</a></li>
+      </ul>
+    </div>
+    <div class="span3">
+      <a href="#" class="to-top-link">Поднять</a>
+      <p>Использовано дискового пространства:<br>93 Mb из 100 Mb (93%)</p>
+    </div>
+  </div>
+</div><!-- #footer -->
+
+</body>
+</html>

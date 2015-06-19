@@ -1,0 +1,325 @@
+
+.dropdown-menu a {
+  cursor: pointer;
+}
+#content.editor > .row-fluid{
+  padding-bottom: 18px;
+}
+
+.dashedHolder .row-fluid [class*="span"]{
+  min-height: 1em;
+
+}
+.remind-link{
+  border-bottom: 1px dashed #2881bf;
+    margin-top:15px; 
+    display: inline-block;
+}
+  .remind-link:hover{
+    border-bottom:none;
+  }
+.dashedHolder{
+  border: 1px dashed #d5d5d5;
+  padding: 7px;
+  margin-bottom: 15px;
+}
+
+.dashedHolder.yellow{
+  background: #fffbd9;
+  border-color: #f7941d
+}
+.dashedHolder.blue{
+  background: #deeeff;
+  border-color: #00bff3
+}
+  .dashedHolder .form-row{
+    margin-bottom: 5px
+  }
+    .dashedHolder .form-row input[type="text"]{
+      width: 22%;
+      float: left;
+      margin-right: 1%;
+    } .dashedHolder .placePub .selectbox{
+      float: left;
+      margin-right: 1%;
+    }
+      .dashedHolder .placePub .selectbox .select{
+      margin-bottom: 0;}
+      .dashedHolder .placePub input[type="text"]{
+        width: 26%;
+        float: left;
+        margin-right: 1%;
+      }
+      .dashedHolder .placePub input[type="text"].pointname{
+        width: 20%;
+      }
+      .dashedHolder .placePub .span10 .selectbox{
+        width: 26%;
+      }
+       .dashedHolder .placePub .span10 .selectbox .select{
+        width: 100%
+       }
+       .dashedHolder .placePub .span2 .selectbox .select{
+        width: 100%
+       }
+
+       .dashedHolder .placePub .buttonHolder a{
+          margin-top: 0
+       }
+    .authorData span{
+      display: inline-block;
+      float: left;
+      margin-top: 6px;
+      margin-right: 6px;
+      color: #272727;
+    }
+    .dashedHolder .social-buttons{
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  .dashedHolder h5{
+    float: left;
+    margin: 2px 8px 0 0;
+  }
+
+  .add-article.buttonHolder a.blueButton{
+    font-size: 20px;
+    padding: 8px 15px;
+    height: 38px;
+    line-height: 20px;
+    margin-top: 3px;
+  }
+  .add-article.buttonHolder.not-active a.blueButton{
+    background: #969696;
+  }
+  .add-article.buttonHolder.not-active a.blueButton:active{
+    background: #969696;
+    box-shadow: none;
+  }
+  .ta-r{
+    margin-top:15px; 
+    float: right;
+    margin-right: 20px;
+  }
+
+.groupedRadio .span1{
+  min-width: 90px !important;
+}
+.margin-bottom-10{
+  margin-bottom: 10px;
+}
+.dashedHolder.yellow > .row-fluid:first-of-type,
+.dashedHolder.yellow > .row-fluid:last-child{
+  margin-bottom: 0
+}
+
+
+.dashedHolder.violet{
+  background: #faeaff;
+  border-color: #bd8cbf;
+  padding: 8px 12px 13px;
+}
+  .dashedHolder.violet .form-row input{
+    width: 100%;
+  }
+  .dashedHolder.violet .dataPicker-holder .hasDatepicker{
+    width: 96%;
+    margin-left: 4%;
+    float: left;
+  }
+  .dashedHolder.violet .dataPicker-holder:first-child .hasDatepicker{
+    margin-right: 4%;
+    margin-left: 0;
+  }
+  .dataPicker-holder{
+    position: relative;
+    float: left;
+    width: 50%;
+  }
+.dataPicker-holder .data-icon{
+  background: url("../img/icons/cal-icon.png") no-repeat 0 0;
+  position: absolute;
+  z-index: 9999;
+  right: 2%;
+  top: 6px;
+  width: 15px;
+  height: 15px;
+}
+  .dataPicker-holder:first-child .data-icon{
+    right: 6%
+  }
+
+  .dashedHolder .label{
+    font-weight: bold;
+    margin-left: 3px;
+    color: #272727;
+  }
+.dashedHolder .selectbox,
+.dashedHolder .selectbox .select{
+  width: 100%;
+}
+.dashedHolder .groupedRadio .radio-holder label{color: #272727;cursor: pointer;
+}
+.dashedHolder .span6 input[type="text"]{
+  width: 100%;
+}
+
+
+.modal-body .selectbox,
+.fullwidth .selectbox,
+.dashedHolder .selectbox,
+.editor .selectbox
+{
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+  margin-bottom: 10px;  
+}
+.modal-body .selectbox .select,
+.fullwidth .selectbox .select,
+.dashedHolder .selectbox .select,
+.editor .selectbox .select {
+  border: 2px solid #fff;
+  margin-bottom: 0;
+  box-shadow: none;
+  font: 12px/24px Arial, Tahoma, sans-serif;
+  font-weight: bold;
+  color: #5f5f60;
+  }
+.modal-body .selectbox .select .text,
+.fullwidth .selectbox .select .text,
+.dashedHolder .selectbox .select .text,
+.editor .selectbox .select .text{
+  line-height: 22px;
+}
+
+.button-group{
+  background: url("../img/elem/buttons-bg-right.png") no-repeat right top;
+  float: left;
+  margin-right:20px;
+  padding-right: 6px;
+}
+.editor-holder{
+  width: 100%;
+}
+.editor-buttons{
+  margin-left: 5px;
+  margin-bottom: 8px;
+}
+.editor-field{
+}
+.editor-holder textarea{
+  clear: both;
+  text-align: left;
+  width: 100%;
+  min-height: 225px;
+  color: #939393;
+  font-family: Arial;
+}
+.button-group.fl-r{
+  float: right;
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+  .ed-button span{  
+    background: url("../img/elem/editor-icons.png") no-repeat left top;
+    display: block;
+    width: 31px;
+    height: 31px;
+  }
+  .ed-button span:before{    
+    background: url("../img/elem/button-separator.png") no-repeat left top;
+    float: left;
+    width: 4px;
+    height: 25px;
+    position: absolute;
+    content: "";
+    top:2px;
+  }
+    .ed-button:first-child span:before{
+      background: url("../img/elem/buttons-bg-left.png") no-repeat left top;
+      height: 31px;
+      left: -6px;
+      top: 0;
+      width: 6px; 
+    }
+  .ed-button{
+    display: block;
+    background: url("../img/elem/buttons-bg.png") repeat-x 0 0 ;
+    width: 31px;
+    height: 31px;
+    position: relative;
+    float: left;
+  }
+    .ed-button:hover{
+      background: url("../img/elem/buttons-bg.png") repeat-x 0 -31px ;
+    }
+    .ed-button:first-child:hover span:before{
+      background: url("../img/elem/buttons-bg-left.png") no-repeat left bottom;
+    }
+
+.ed-button span.font-size{background-position: 1px 9px;}
+.ed-button span.bold{background-position: 7px -20px;}
+.ed-button span.italic{background-position: 10px -50px;}
+.ed-button span.underline{background-position: 10px -80px;}
+.ed-button span.crossline{background-position: 10px -111px;}
+.ed-button span.text-align-left{background-position: -59px 10px;}
+.ed-button span.text-align-center{background-position: -57px -20px;}
+.ed-button span.text-align-right{background-position: -57px -50px;}
+.ed-button span.text-align-justify{background-position: -57px -80px;}
+.ed-button span.create-ul{background-position: -57px -110px;}
+.ed-button span.create-ol{background-position: -57px -141px;}
+.ed-button span.add-video{background-position: -126px 8px;}
+.ed-button span.add-audeo{background-position: -124px -21px;}
+.ed-button span.add-file{background-position: -124px -51px;}
+.ed-button span.add-img{background-position: -124px -81px;}
+.ed-button span.add-link{background-position: -124px -111px;}
+.ed-button span.go-back{background-position: -127px -140px;}
+.ed-button span.go-forth{background-position: -188px 10px}
+.ed-button span.say-in-mice{background-position: -188px -22px;}
+
+
+
+.dashedHolder .form-row.with-allow input[type="text"]{
+  width: 100%;
+  padding-left: 355px;
+}
+   
+.allowed-holder{
+  position: absolute;
+  top: 3px;
+  left: 4px;
+}
+.allowed{
+  background: #4d9f20;
+  padding: 2px 20px 2px 5px;
+  position: relative;
+  color: #fff;
+  display: inline-block;
+  border-radius: 4px;
+}
+  .allowed .close{
+      color: #fff;
+      position: absolute;
+      right: 8px;
+      top: 7px;width: 6px;
+       height:6px;
+      text-transform: lowercase;
+      cursor: pointer;
+      text-indent: -9999px;
+      background: url("../img/elem/allowed-cross.png") no-repeat 0 0;
+  }
+
+ .allowed .od-group{
+    display: inline-block;
+    padding-left: 18px;
+    background: url("../img/elem/od-icon.png") no-repeat 0 3px;
+  } 
+ .allowed .mail{
+    display: inline-block;
+    padding-left: 17px;
+    background: url("../img/elem/mail-icon.png") no-repeat 0 4px;
+  }
+
+  .private .selectbox .select .text{
+    color: #4d9f20
+  }

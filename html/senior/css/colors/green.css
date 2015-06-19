@@ -1,0 +1,41 @@
+a{
+	color: #028D28;
+ }
+
+.breadcums{
+	color: #028D28;
+ }
+ 
+.categories h2,
+.categories h3,
+.categories a{
+	color: #028D28;
+}
+
+.categories .readmore{
+	background: url("../../img/elem/readmore-button-dgreen.png") no-repeat scroll 0 0 transparent;
+}
+.article-holder h2{
+	color: #028D28;
+
+}
+
+.sub-page-nav{
+	background-color: #07260e;
+	background-image: -webkit-linear-gradient(left, #07260e, #0b3814);
+	background-image: -moz-linear-gradient(left, #07260e, #0b3814);
+	background-image: -o-linear-gradient(left, #07260e, #0b3814);
+	background-image: -ms-linear-gradient(left, #07260e, #0b3814);
+	background-image: linear-gradient(left, #07260e, #0b3814);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#07260e', endColorstr='#0b3814',GradientType=1 );
+}
+	
+	.sub-page-nav ul li:hover,
+	.sub-page-nav ul li.current{
+		background: url("../../img/elem/sub-nav-arrow-green.png") no-repeat scroll right center transparent;
+		padding-right: 8px;
+		margin-right: -8px;
+	}
+		.sub-page-nav ul li a{
+			border-bottom: 1px solid #06200B;
+		}

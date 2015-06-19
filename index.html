@@ -1,0 +1,290 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>{#meAndMy.Web}...</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+	<script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
+	<script type="text/javascript" src="js/fancybox/jquery.effects.core.js"></script>
+	<script type="text/javascript" src="js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link media="screen" href="js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" rel="stylesheet"/>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("a[rel=zoomzoom]").fancybox({
+				'titleShow' : true,
+				'titlePosition': 'over',
+				'titleFromAlt' : true,
+				'transitionIn' : 'elastic',
+				'transitionOut' : 'elastic',
+				speedIn :900,
+				speedOut :500,
+				overlayColor :'#000',
+				overlayOpacity :0.5
+			});
+		});
+		$(function() {
+			var offset = $("#fixed").offset();
+			var topPadding = 15;
+			$(window).scroll(function() {
+				if ($(window).scrollTop() > offset.top) {
+					$("#fixed").stop().animate({marginTop: $(window).scrollTop() - offset.top + topPadding});
+				}
+				else {$("#fixed").stop().animate({marginTop: 0});};});
+		});
+	</script>
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" href="/files/css/ie.css" type="text/css" media="screen, projection" />
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".block:odd").css({'margin-left':'20px'});
+			})
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+
+<div id="wrapper">
+
+	<div id="header">
+		<div id="logo">
+			<a href="/">
+				<img src="images/logo.png" alt="{#meAndMy.Web}..."/>
+			</a>
+		</div>
+	</div><!-- #header-->
+
+	<div id="content">
+		<div id="inner">
+			<div id="middle">
+
+				<div class="block">
+					<a href="logos/bigfile.png" rel="zoomzoom">
+						<img src="logos/bigfile.png" width="320" alt="<a href='/html/bigfile' target='_blank'>открыть в новом окне</a>"/>
+					</a>
+					<p>HTML5/CSS responsive layout + javascript
+					
+					</p>
+					<a href="/html/bigfile" class="url_h" target="_blank">link to html</a>
+				</div>
+
+				<div class="block">
+					<a href="logos/bootstrap.png" rel="zoomzoom">
+						<img src="logos/bootstrap.png" width="320" alt="<a href='/html/bootstrap' target='_blank'>открыть в новом окне</a>"/>
+					</a>
+					<p>HTML5/CSS responsive layout + javascript			
+					</p>
+					<a href="/html/bootstrap" class="url_h" target="_blank">link to html</a>
+				</div>
+
+				<div class="block">
+					<a href="logos/senior.png" rel="zoomzoom">
+						<img src="logos/senior.png" width="320" alt="<a href='/html/senior' target='_blank'>открыть в новом окне</a>"/>
+					</a>
+					<p>HTML5/CSS layout</p>
+					<a href="/html/senior" class="url_h" target="_blank">link to html</a>
+				</div>
+
+				<div class="block">
+					<a href="logos/young.png" rel="zoomzoom">
+						<img src="logos/young.png" width="320" alt="<a href='/html/young' target='_blank'>открыть в новом окне</a>"/>
+					</a>
+					<p>HTML5/CSS layout</p>
+					<a href="/html/young" class="url_h" target="_blank">link to html</a>
+				</div>
+
+				<div class="block">
+					<a href="logos/boragro.jpg" rel="zoomzoom">
+						<img src="logos/boragro.jpg" width="320" alt="<a href='/html/boragro' target='_blank'>открыть в новом окне</a>"/>
+					</a>
+					<p>XHTML/CSS layout + template for CMS "Look" studio
+					
+					</p>
+					<a href="/html/boragro" class="url_h" target="_blank">link to html</a>
+				</div>
+				<div class="block">
+					<a href="logos/casalatina.jpg" rel="zoomzoom">
+						<img src="logos/casalatina.jpg" width="320" alt="<a href='/html/casalatina' target='_blank'>открыть в новом окне</a>"/>
+					</a>
+					<p>XHTML/CSS layout + template for Joomla 1.5					
+					</p>
+					<a href="/html/casalatina" class="url_h" target="_blank">link to html</a>
+				</div>
+				
+				<div class="block">
+					<a href="logos/bonus.jpg" rel="zoomzoom">
+						<img src="logos/bonus.jpg" width="320" alt="<a href='/html/smart' target='_blank'>открыть в новом окне</a>"/>
+					</a>
+					<p>XHTML/CSS layout</p>
+					<a href="/html/smart" class="url_h" target="_blank">link to html</a>
+				</div>
+				<div class="block">
+					<a href="logos/deduction.jpg" rel="zoomzoom">
+						<img src="logos/deduction.jpg" width="320" alt="<a href='/html/deduction' target='_blank'>открыть в новом окне</a>"/>
+					</a>
+					<p>XHTML/CSS layout + javascript</p>
+					<a href="/html/deduction" class="url_h" target="_blank">link to html</a>
+				</div>
+				<div class="block">
+					<a href="logos/cfsgroup.jpg" rel="zoomzoom">
+						<img src="logos/cfsgroup.jpg" width="320" alt="<a href='/html/group' target='_blank'>открыть в новом окне</a>"/>
+					</a>
+					<p>XHTML/CSS layout + javascript</p>
+					<a href="/html/group" class="url_h" target="_blank">link to html</a>
+				</div>
+				<div class="block">
+					<a href="logos/ladder.jpg" rel="zoomzoom">
+						<img src="logos/ladder.jpg" width="320" alt="<a href='/html/ladder' target='_blank'>открыть в новом окне</a>"/>
+					</a>
+					<p>XHTML/CSS layout + template for CMS "Look" studio
+					<br/>
+					
+					</p>
+					<a href="/html/ladder" class="url_h" target="_blank">link to html</a>
+				</div>
+				<div class="block">
+					<a href="logos/lorenco.jpg" rel="zoomzoom">
+						<img src="logos/lorenco.jpg" width="320" alt="<a href='/html/lorenco' target='_blank'>открыть в новом окне</a>"/>
+					</a>
+					<p>XHTML/CSS layout  + template for Joomla 1.5"
+					</p>
+					<a href="/html/lorenco" class="url_h" target="_blank">link to html</a>
+				</div>
+				<div class="block">
+					<a href="logos/novosti.jpg" rel="zoomzoom">
+						<img src="logos/novosti.jpg" width="320" alt="<a href='/html/novosti' target='_blank'>открыть в новом окне</a>"/>
+					</a>
+					<p>XHTML/CSS layout<br/>
+					
+					</p>
+					<a href="/html/novosti" class="url_h" target="_blank">link to html</a>
+				</div>
+				<div class="block">
+					<a href="logos/oskol.jpg" rel="zoomzoom">
+						<img src="logos/oskol.jpg" width="320" alt="<a href='/html/oksel' target='_blank'>открыть в новом окне</a>"/>
+					</a>
+					<p>XHTML/CSS layout + template for CMS "Look" studio
+					
+					</p>
+					<a href="/html/oksel" class="url_h" target="_blank">link to html</a>
+				</div>
+				<div class="block">
+					<a href="logos/plastic.jpg" rel="zoomzoom">
+						<img src="logos/plastic.jpg" width="320" alt="<a href='/html/plastic' target='_blank'>открыть в новом окне</a>"/>
+					</a>
+					<p>XHTML/CSS layout + template for CMS "Look" studio
+					
+					</p>
+					<a href="/html/plastic" class="url_h" target="_blank">link to html</a>
+				</div>
+				<div class="block">
+					<a href="logos/pitbit.jpg" rel="zoomzoom">
+						<img src="logos/pitbit.jpg" width="320" alt="<a href='/html/portal' target='_blank'>открыть в новом окне</a>"/>
+					</a>
+					<p>XHTML/CSS layout</p>
+					<a href="/html/portal" class="url_h" target="_blank">link to html</a>
+				</div>
+				<div class="block">
+					<a href="logos/prime.jpg" rel="zoomzoom">
+						<img src="logos/prime.jpg" width="320" alt="<a href='/html/prime' target='_blank'>открыть в новом окне</a>"/>
+					</a>
+					<p>XHTML/CSS layout<br/>
+					
+					</p>
+					<a href="/html/prime" class="url_h" target="_blank">link to html</a>
+				</div>
+				<div class="block">
+					<a href="logos/region.jpg" rel="zoomzoom">
+						<img src="logos/region.jpg" width="320" alt="<a href='/html/region' target='_blank'>открыть в новом окне</a>"/>
+					</a>
+					<p>XHTML/CSS layout + template for CMS "Look" studio
+					
+					</p>
+					<a href="/html/region" class="url_h" target="_blank">link to html</a>
+				</div>
+				<div class="block">
+					<a href="logos/saitobot.jpg" rel="zoomzoom">
+						<img src="logos/saitobot.jpg" width="320" alt="<a href='/html/saitobot' target='_blank'>открыть в новом окне</a>"/>
+					</a>
+					<p>XHTML/CSS layout + javascript
+					</p>
+					<a href="/html/saitobot" class="url_h" target="_blank">link to html</a>
+				</div>
+				<div class="block">
+					<a href="logos/zerno.jpg" rel="zoomzoom">
+						<img src="logos/zerno.jpg" width="320" alt="<a href='/html/zerno' target='_blank'>открыть в новом окне</a>"/>
+					</a>
+					<p>XHTML/CSS layout
+					</p>
+					<a href="/html/zerno" class="url_h" target="_blank">link to html</a>
+				</div>
+				<div class="block">
+					<a href="logos/spain.jpg" rel="zoomzoom">
+						<img src="logos/spain.jpg" width="320" alt="<a href='/html/spain' target='_blank'>открыть в новом окне</a>"/>
+					</a>
+					<p>XHTML/CSS layout<br/>
+					
+					</p>
+					<a href="/html/spain" class="url_h" target="_blank">link to html</a>
+				</div>
+				<div class="block">
+					<a href="logos/stud.jpg" rel="zoomzoom">
+						<img src="logos/stud.jpg" width="320" alt="<a href='/html/stud' target='_blank'>открыть в новом окне</a>"/>
+					</a>
+					<p>XHTML/CSS layout + javascript + theme for Wordpress
+					</p>
+					<a href="/html/stud" class="url_h" target="_blank">link to html</a>
+				</div>
+				<div class="block">
+					<a href="logos/studio.jpg" rel="zoomzoom">
+						<img src="logos/studio.jpg" width="320" alt="<a href='/html/studio' target='_blank'>открыть в новом окне</a>"/>
+					</a>
+					<p>XHTML/CSS layout + template for CMS "Look" studio
+					
+					
+					</p>
+					<a href="/html/studio" class="url_h" target="_blank">link to html</a>
+				</div>
+				
+				<div class="notend">to be continued...</div>
+			</div>
+			<div id="right">
+				<div id="fixed">
+						<h2>Contacts:</h2>
+							<ul class="contacts">
+								<li>Name: Bogdan Shestakov</li>
+								<li>Phobe: +380504269017</li>
+								<li>ICQ: 568785591</li>
+								<li>Skype: rehhaguu1</li>
+								<li>Mail: <a href="mailto:bogdan.shestakov@gmail.com">bogdan.shestakov@gmail.com</a> </li>
+								<li><a href="Shestakov_Bogdan_CV.pdf">This is my CV</a></li>
+							</ul>
+						<h2>Sertificates:</h2>
+							<div class="cert">
+								<a target="_blank" href="http://www.intuit.ru/sites/default/files/diploma/j/a/w/e/l/NOU__INTUIT_-2-530900-OLF.png"><img  title="Удостоверение INTUIT.ru №P00178055" width="120" src="http://www.intuit.ru/sites/default/files/diploma/j/a/w/e/l/NOU__INTUIT_-2-530900-OLF.png" alt=""/></a>
+									
+								<a target="_blank" href="http://www.intuit.ru/sites/default/files/diploma/j/a/w/e/l/NOU__INTUIT_-2-530820-OLF.png"><img  title="Удостоверение INTUIT.ru №P00177975" width="120" src="http://www.intuit.ru/sites/default/files/diploma/j/a/w/e/l/NOU__INTUIT_-2-530820-OLF.png" alt=""/></a>
+									
+								<a target="_blank" href="http://www.certifications.ru/resume/184826">
+								<img src="http://www.certifications.ru/static/images/banner/75ru.png" width="120" border="0" alt=""/></a>
+									
+								<a target="_blank" href="http://www.certifications.ru/resume/184826">
+								<img src="http://www.certifications.ru/static/images/banner/57ru.png" width="120" border="0" alt=""/></a> 
+							</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- #content-->
+
+</div><!-- #wrapper -->
+
+<div id="footer">
+</div><!-- #footer -->
+
+</body>
+</html>

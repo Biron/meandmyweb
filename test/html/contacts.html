@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Блокнот | Контакты</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="css/ui-lightness/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+  
+
+  <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+  <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  
+  <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/ie.css">
+  <![endif]-->
+  <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="css/ie7.css">
+  <![endif]-->
+</head>
+
+<body>
+<div id="wrapper">
+
+	<div id="header">
+    <div class="bottom-line"></div>
+    <div class="row-fluid">
+      <div class="span3">
+        <div class="logo"><a href="#"><img src="img/elem/logo.png" alt=""></a></div>
+      </div>
+      <div class="span9">
+        <div class="main-navigation logged-in">
+          <ul>
+            <li class="my-note current"><a href="#">Мой блокнот</a></li>
+            <li class="filter"><a href="#">Фильтры</a></li>
+            <li class="search"><a href="#">Поиск</a></li>
+            <li class="news"><a href="#">Уведомления<span class="news-numder">3</span></a></li>
+          </ul>
+        </div>        
+    
+        <div class="control-panel logged-in">
+          <ul>
+            <li class="location"><a href="#">Санкт-Петербург</a></li>
+            <li class="navigation-add-button"><a href="#">Добавить</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+	  <!--inner menu list-->
+	  <div class="fullwidth">
+		<div class="leftSideBar">
+		  <ul class="innerMenu">
+		    <li><a href="#"><img src="img/elem/icon1.png" alt=""/>Папки</a></li>
+		    <li><a href="#"><img src="img/elem/icon2.png" alt=""/>Записи</a></li>
+		    <li><a href="#"><img src="img/elem/icon3.png" alt=""/>Сообщения <span class="colorG">+18</span></a></li>
+		    <li><a href="#"><img src="img/elem/icon4.png" alt=""/>Места</a></li>
+		    <li><a href="#"><img src="img/elem/icon5.png" alt=""/>Группы</a></li>
+		    <li><a class="active" href="#"><img src="img/elem/icon6.png" alt=""/>Контакты</a></li>
+		  </ul>
+		</div>
+		<div class="rightSideBar">
+		  <ul class="innerMenu rightSideMenu">
+			<li><a href="#"><img src="img/elem/icon7.png" alt=""/>Настройки</a></li>
+			<li><a href="#"><img src="img/elem/icon8.png" alt=""/>Выход</a></li>
+		  </ul>	
+		</div>
+	  </div><!--end:inner menu list-->
+	</div><!-- #header-->
+
+	<div id="content">
+	  <div class="row-fluid wrapperGroupHolder"> 	
+		<div class="span12 headerGroup">
+		  <div class="groupLeft">
+			<h1>Контакты</h1>
+		  </div>
+		  <div class="groupRight">
+			<div class="buttonHolder">
+				<a class="blueButton" href="#">Добавить контакт</a>
+			</div>
+			<div class="folderSearchHolder contactsSearch">
+				<input class="styled-input" type="text" name="search" value="Поиск среди контактов"/>
+			</div>
+		  </div>		  
+		</div>
+	  </div>
+	  <div class="row-fluid wrapperGroupContentHolder normal">
+	  	<div class="span12 simpleGroupHolder">
+	  	  <div class="socialButtonsHolder clearfix">
+	  	  	<span>Вы можете импортировать контакты из социальных сетей и почты</span>
+	  	  	<ul class="socialButtonList">
+	  	  		<li><a href="#"><img src="img/icons/icon-mail.png" alt=""></a></li>
+	  	  		<li><a href="#"><img src="img/icons/mail-co.png" alt=""></a></li>
+	  	  		<li><a href="#"><img src="img/icons/ok-ico.png" alt=""></a></li>
+	  	  		<li><a href="#"><img src="img/icons/icon-twitter.png" alt=""></a></li>
+	  	  		<li><a href="#"><img src="img/icons/vk-ico.png" alt=""></a></li>
+	  	  		<li><a href="#"><img src="img/icons/yandex-ico.png" alt=""></a></li>
+	  	  		<li><a href="#"><img src="img/icons/facebook-ico.png" alt=""></a></li>
+	  	  		<li><a href="#"><img src="img/icons/google-ico.png" alt=""></a></li>
+	  	  		<li><a href="#"><img src="img/icons/link-ico.png" alt=""></a></li>
+	  	  	</ul>
+	  	  	<a href="#" class="closeButton">Закрыть</a>
+	  	  </div>
+		  <div class="contactsListHolder clearfix">
+			<ul class="contactsList">
+				<li>
+					<div class="cAvatar">
+						<a href="#"><img src="img/elem/no-avatar.png" alt=""></a>
+					</div>
+					<span class="cGroup">
+						<a href="#">Знакомые</a>
+					</span>
+					<span class="cName"><a href="#">Венглинский Дмитрий Сергеевич</a></span>
+					<span class="cNumber">Записей в совместном доступе: 18</span>
+					<div class="cButton">
+						<div class="buttonHolder">
+			                <a href="#">Редактировать</a>
+			            </div>
+					</div>
+				</li>
+				<li>
+					<div class="cAvatar">
+						<div class="size-20">
+							<a href="#"><img src="img/content/avatar.jpg" alt=""></a>
+						</div>
+					</div>
+					<span class="cGroup">
+						<a href="#">Друзья</a>
+					</span>
+					<span class="cName"><a href="#">Жириновский</a></span>
+					<span class="cNumber">Записей в совместном доступе: 3</span>
+					<div class="cButton">
+						<div class="buttonHolder">
+			                <a href="#">Редактировать</a>
+			            </div>
+					</div>
+				</li>
+				<li>
+					<div class="cAvatar">
+						<a href="#"><img src="img/elem/no-avatar.png" alt=""></a>
+					</div>
+					<span class="cGroup">
+						<a href="#" class="no-group">Без группы</a>							
+					</span>
+					<span class="cName"><a href="#">operator8tv@gmail.com</a></span>
+					<span class="cNumber">Записей в совместном доступе: 36</span>
+					<div class="cButton">
+						<div class="buttonHolder">
+			                <a href="#">Редактировать</a>
+			            </div>
+					</div>
+				</li>
+				<li>
+					<div class="cAvatar">
+						<a href="#"><img src="img/elem/no-avatar.png" alt=""></a>
+					</div>
+					<span class="cGroup">
+						<a href="#">Знакомые</a>
+					</span>
+					<span class="cName"><a href="#">Венглинский Дмитрий Сергеевич</a></span>
+					<span class="cNumber">Записей в совместном доступе: 18</span>
+					<div class="cButton">
+						<div class="buttonHolder">
+			                <a href="#">Редактировать</a>
+			            </div>
+					</div>
+				</li>
+				<li>
+					<div class="cAvatar">
+						<div class="size-20">
+							<a href="#"><img src="img/content/avatar.jpg" alt=""></a>
+						</div>
+					</div>
+					<span class="cGroup">
+						<a href="#">Друзья</a>
+					</span>
+					<span class="cName"><a href="#">Жириновский</a></span>
+					<span class="cNumber">Записей в совместном доступе: 3</span>
+					<div class="cButton">
+						<div class="buttonHolder">
+			                <a href="#">Редактировать</a>
+			            </div>
+					</div>
+				</li>
+				<li>
+					<div class="cAvatar">
+						<a href="#"><img src="img/elem/no-avatar.png" alt=""></a>
+					</div>
+					<span class="cGroup">
+						<a href="#" class="no-group">Без группы</a>							
+					</span>
+					<span class="cName"><a href="#">operator8tv@gmail.com</a></span>
+					<span class="cNumber">Записей в совместном доступе: 36</span>
+					<div class="cButton">
+						<div class="buttonHolder">
+			                <a href="#">Редактировать</a>
+			            </div>
+					</div>
+				</li>
+				<li>
+					<div class="cAvatar">
+						<a href="#"><img src="img/elem/no-avatar.png" alt=""></a>
+					</div>
+					<span class="cGroup">
+						<a href="#">Знакомые</a>
+					</span>
+					<span class="cName"><a href="#">Венглинский Дмитрий Сергеевич</a></span>
+					<span class="cNumber">Записей в совместном доступе: 18</span>
+					<div class="cButton">
+						<div class="buttonHolder">
+			                <a href="#">Редактировать</a>
+			            </div>
+					</div>
+				</li>
+				<li>
+					<div class="cAvatar">
+						<div class="size-20">
+							<a href="#"><img src="img/content/avatar.jpg" alt=""></a>
+						</div>
+					</div>
+					<span class="cGroup">
+						<a href="#">Друзья</a>
+					</span>
+					<span class="cName"><a href="#">Жириновский</a></span>
+					<span class="cNumber">Записей в совместном доступе: 3</span>
+					<div class="cButton">
+						<div class="buttonHolder">
+			                <a href="#">Редактировать</a>
+			            </div>
+					</div>
+				</li>
+				<li>
+					<div class="cAvatar">
+						<a href="#"><img src="img/elem/no-avatar.png" alt=""></a>
+					</div>
+					<span class="cGroup">
+						<a href="#" class="no-group">Без группы</a>							
+					</span>
+					<span class="cName"><a href="#">operator8tv@gmail.com</a></span>
+					<span class="cNumber">Записей в совместном доступе: 36</span>
+					<div class="cButton">
+						<div class="buttonHolder">
+			                <a href="#">Редактировать</a>
+			            </div>
+					</div>
+				</li>
+				<li>
+					<div class="cAvatar">
+						<a href="#"><img src="img/elem/no-avatar.png" alt=""></a>
+					</div>
+					<span class="cGroup">
+						<a href="#">Знакомые</a>
+					</span>
+					<span class="cName"><a href="#">Венглинский Дмитрий Сергеевич</a></span>
+					<span class="cNumber">Записей в совместном доступе: 18</span>
+					<div class="cButton">
+						<div class="buttonHolder">
+			                <a href="#">Редактировать</a>
+			            </div>
+					</div>
+				</li>
+				<li>
+					<div class="cAvatar">
+						<div class="size-20">
+							<a href="#"><img src="img/content/avatar.jpg" alt=""></a>
+						</div>
+					</div>
+					<span class="cGroup">
+						<a href="#">Друзья</a>
+					</span>
+					<span class="cName"><a href="#">Жириновский</a></span>
+					<span class="cNumber">Записей в совместном доступе: 3</span>
+					<div class="cButton">
+						<div class="buttonHolder">
+			                <a href="#">Редактировать</a>
+			            </div>
+					</div>
+				</li>
+				<li>
+					<div class="cAvatar">
+						<a href="#"><img src="img/elem/no-avatar.png" alt=""></a>
+					</div>
+					<span class="cGroup">
+						<a href="#" class="no-group">Без группы</a>							
+					</span>
+					<span class="cName"><a href="#">operator8tv@gmail.com</a></span>
+					<span class="cNumber">Записей в совместном доступе: 36</span>
+					<div class="cButton">
+						<div class="buttonHolder">
+			                <a href="#">Редактировать</a>
+			            </div>
+					</div>
+				</li>
+			</ul>
+		  </div>
+	    </div>	
+	  </div>
+	</div><!-- #content-->
+
+</div><!-- #wrapper -->
+
+<div id="footer">
+  <div class="row-fluid">
+    <div class="span3">
+      <a href="#" class="bottom-logo"><img src="img/elem/logo.png" alt=""></a>
+      <ul class="social-buttons">
+        <li><a href="#"><img src="img/icons/facebook-ico.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/google-ico.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/link-ico.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/mail-co.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/ok-ico.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/vk-ico.png" alt=""></a></li>
+        <li><a href="#"><img src="img/icons/yandex-ico.png" alt=""></a></li>
+      </ul>
+      <p class="copyright">
+        © 2013 Все права защищены
+      </p>
+    </div>
+    <div class="span3">
+      <ul class="bottom-nav">
+        <li class="main-link"><a href="#">О сервисе</a></li>
+        <li><a href="#">О Блокноте</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Условия договора</a></li>
+        <li><a href="#">Политика конфиденциальности</a></li>
+        <li><a href="#">Разработчики сервиса</a></li>
+      </ul>
+    </div>
+    <div class="span3">
+      <ul class="bottom-nav">
+        <li class="main-link"><a href="#">Блокнот пользователя</a></li>
+        <li><a href="#">Записи</a></li>
+        <li><a href="#">Сообщения</a><span class="number">+18</span></li>
+        <li><a href="#">Места</a></li>
+        <li><a href="#">Настройки</a></li>
+        <li><a href="#">Выход</a></li>
+      </ul>
+    </div>
+    <div class="span3">
+      <a href="#" class="to-top-link">Поднять</a>
+      <p>Использовано дискового пространства:<br>93 Mb из 100 Mb (93%)</p>
+    </div>
+  </div>
+</div><!-- #footer -->
+
+</body>
+</html>

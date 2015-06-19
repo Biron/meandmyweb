@@ -1,0 +1,7 @@
+* html #wrapper,
+* html #footer {
+	width: expression((documentElement.clientWidth||document.body.clientWidth)<1280?'1280px':'');
+}
+a.button{
+	margin: 0px;
+}

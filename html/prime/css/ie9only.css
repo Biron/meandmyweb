@@ -1,0 +1,8 @@
+* html #wrapper,
+* html #footer {
+	width: expression((documentElement.clientWidth||document.body.clientWidth)<1000?'1000px':'');
+}
+
+.topright{
+margin-top:-25px;
+}
